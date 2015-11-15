@@ -107,4 +107,4 @@ sudo /etc/init.d/nscd restart
 
 If you want to use this configuration on your machine, **please be sure to change your `.gitconfig` name and email address!**
 
-[![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/milanaryal.github.io/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
