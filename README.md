@@ -78,7 +78,9 @@ $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 wget https://raw.githubusercontent.com/MilanAryal/config/base16-ocean-theme/gnome-terminal/base16-ocean.dark.sh && . base16-ocean.dark.sh
 ```
 
-* Check **unlimited scrolling on GNOME Terminal**: Goto Profile Preferences > Scrolling > Scrollback > Check Unlimited.
+* Check **unlimited scrolling on GNOME Terminal**: Go to Profile Preferences > Scrolling > Scrollback > Check Unlimited.
+
+* On Terminal: Try, right click on terminal. Go to **Profiles > Profile Preferences** then left click. You will got new window. On **General** tab you have option **Use custom default terminal size**. Check option and change size of terminal. Go to close. Close terminal. Open terminal. New opened terminal will be in size your specified.
 
 * Install Ocean dark theme for **gedit**, and **Atom**.
 
