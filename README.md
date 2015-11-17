@@ -13,8 +13,6 @@ OS: Ubuntu 14.04 LTS (Trusty Tahr)
 | `.gitignore` | The ignore file that I use everywhere. |
 | `.gitattributes` | Dealing with line endings. |
 | `base16-ocean-theme/` | The collection of Base16 Ocean theme for Terminal and text editor. |
-| `etc/hosts` | Block unsafe/unwanted websites and ads with the hosts file. |
-| `*.BK` | Backup file for default configuration. |
 
 ## Checklist
 
