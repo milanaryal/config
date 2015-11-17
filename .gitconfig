@@ -11,6 +11,9 @@
   st = status
   br = branch
 
+[push]
+  default = simple
+
 [color]
     ui = auto
   [color "branch"]
