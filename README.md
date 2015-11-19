@@ -9,6 +9,7 @@ OS: Ubuntu 14.04 LTS (Trusty Tahr)
 | File | Description |
 | --- | --- |
 | `.bashrc` | Custom GNOME Terminal app prompt and echos the currently checked out Git branch. |
+| `.bash_aliases` | Custom aliases for commands. |
 | `.gitconfig` | Global Git configuration to specify my name and email, shortcuts, colors, and more. |
 | `.gitignore` | The ignore file that I use everywhere. |
 | `.gitattributes` | Dealing with line endings. |
