@@ -78,7 +78,7 @@ $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 * **Base16 Ocean dark theme for GNOME Terminal**: For installation just execute desired command below. Be careful, terminal will be closed after install.
 
 ``` bash
-wget https://raw.githubusercontent.com/MilanAryal/config/base16-ocean-theme/gnome-terminal/base16-ocean.dark.sh && . base16-ocean.dark.sh
+wget https://raw.githubusercontent.com/MilanAryal/config/master/base16-ocean-theme/gnome-terminal/base16-ocean.dark.sh && . base16-ocean.dark.sh
 ```
 
 * Check **unlimited scrolling on GNOME Terminal**: Go to Profile Preferences > Scrolling > Scrollback > Check Unlimited.
