@@ -32,7 +32,7 @@ $ jekyll serve    # => Browse your site @ http://localhost:4000
 ```
 
 
-Blogging using Jekyll and GitHub Pages
+[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 ----
 
 Install [Bundler](http://bundler.io/):
