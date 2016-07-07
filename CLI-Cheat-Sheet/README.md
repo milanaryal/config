@@ -11,5 +11,5 @@ Included in this repo are several files separated by command type. Look at the f
 * Server Commands: [server-commands.md](server-commands.md)
 * Moderate/Advanced Commands: [moderate-advanced-commands.md](moderate-advanced-commands.md)
 * npm commands: [npm-commands.md](npm-commands.md)
-* jekyll-commands: [jekyll-commands.md](jekyll-commands.md)
-* how-to: [how-to.md](how-to.md)
+* Jekyll commands: [jekyll-commands.md](jekyll-commands.md)
+* How to tips: [how-to.md](how-to.md)

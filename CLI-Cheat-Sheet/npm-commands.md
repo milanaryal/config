@@ -12,7 +12,7 @@ Requirements
 
 Install [Node.js](https://nodejs.org/en/download/package-manager/) on your machine.
 
-Managing global package
+Managing global packages
 ----
 
 `npm ls -g --depth=0` - list out global installed packages

@@ -5,9 +5,9 @@ Gulp is not only a weird noise you make when attempting to do something physical
 
 ### Resources
 
-* [http://gulpjs.com/](http://gulpjs.com/)
+* [gulpjs.com](http://gulpjs.com/)
 * [A cheatsheet for gulp](https://github.com/osscafe/gulp-cheatsheet)
-* [http://www.smashingmagazine.com/2014/06/11/building-with-gulp/](http://www.smashingmagazine.com/2014/06/11/building-with-gulp/)
+* [Building With Gulp](http://www.smashingmagazine.com/2014/06/11/building-with-gulp/)
 * [Read more](https://github.com/gulpjs/gulp/blob/master/docs/README.md#articles)
 
 
