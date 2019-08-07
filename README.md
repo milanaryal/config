@@ -1,8 +1,8 @@
 # Config
 
-OS: Ubuntu 14.04 LTS (Trusty Tahr)
+OS: Windows Subsystem for Linux (WSL)
 
-![screenshot from 2015-11-18 07 23 29](https://cloud.githubusercontent.com/assets/9361180/11230366/6b83fc92-8dc6-11e5-810a-c37fabeb196a.png)
+![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png)
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
