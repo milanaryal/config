@@ -1,6 +1,6 @@
 # Config
 
-OS: Windows Subsystem for Linux (WSL)
+OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows) // *[Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)*
 
 ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png)
 
@@ -10,7 +10,7 @@ OS: Windows Subsystem for Linux (WSL)
 
 ### 1. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-* Before install Ubuntu distro enable WSL feature with the Powershell `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+* Before installing Ubuntu distro enable WSL feature with the Powershell `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 
 * Get Ubuntu distro from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) or with [command-line/script](https://docs.microsoft.com/en-us/windows/wsl/install-manual) on Powershell
 
