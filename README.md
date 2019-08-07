@@ -11,11 +11,12 @@ OS: Windows Subsystem for Linux (WSL)
 ### 1. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 * Before install Ubuntu distro enable WSL feature with the Powershell `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-* Get Ununtu distro from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) or with [command-line/script](https://docs.microsoft.com/en-us/windows/wsl/install-manual) on Powershell
+
+* Get Ubuntu distro from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) or with [command-line/script](https://docs.microsoft.com/en-us/windows/wsl/install-manual) on Powershell
 
 ### 2. Prepare OS
 
-* Update OS packages: `$ sudo apt-get update && sudo apt-get upgrade`
+* Update OS packages: `$ sudo apt-get update -y && sudo apt-get upgrade -y`
 
 ### 3. Setup Ruby and gems
 
@@ -23,44 +24,34 @@ OS: Windows Subsystem for Linux (WSL)
 
 Or,
 
-*  Install Ruby Version Manager (RVM):
+*  Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/):
 
 ``` bash
-$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-
-$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
-
-$ source ~/.rvm/scripts/rvm
+$ sudo apt-add-repository ppa:brightbox/ruby-ng
 ```
 
-Installing Specific Ruby and Rails Versions:
+* update system `$ sudo apt-get update`
+
+* Installing Specific Ruby versions:
 
 ``` bash
-rvm install ruby_version
-rvm list
-rvm use ruby_version
+$ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 ```
 
 * Install Bundler gem: `$ sudo gem install bundler`
+
 * Place the `Gemfile` in the project folder and install gem: `$ bundle install`
 
-### 4. Setup Node.js
+### 4. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 
-* Install Node.js: `$sudo apt-get install nodejs`
+* Node.js v12.x:
 
-You need to manually create a symlink `/usr/bin/node`. Shortcut for bash compatible shells:
-
-``` bash
-$ sudo ln -s `which nodejs` /usr/bin/node
+```bash
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
-Or if you use non-standard shells, just hardcode the path you find with which nodejs:
-
-``` bash
-$ sudo ln -s /usr/bin/nodejs /usr/bin/node
-```
-
-* Install Grunt command line tools: `sudo npm install -g grunt-cli`
+* Install Gulp command line tools: `sudo npm install -g gulp-cli`
 
 ---
 
