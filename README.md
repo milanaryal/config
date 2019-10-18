@@ -6,6 +6,8 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
+---
+
 ## Checklist
 
 ### 1. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
