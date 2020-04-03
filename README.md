@@ -70,6 +70,31 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 ``` bash
 sudo /etc/init.d/nscd restart
 ```
+
+---
+
+#### Summary
+
+```bash
+- text editor
+  + atom
+
+- git
+  + github desktop
+
+- wsl
+  + ubuntu
+
+- ruby
+  + ruby
+  + ruby-dev
+  + bundler
+  + bundle gh-pages  
+
+- node.js
+  + gulp.js
+```
+
 ---
 
 [![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
