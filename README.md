@@ -75,9 +75,12 @@ $ sudo apt-get update
 ``` bash
 $ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 ```
+
+<br />
+
 #### Install essential gems for our project
 
-* Install Bundler gem: 
+* Install [Bundler](https://bundler.io/) gem: 
 
 ```bash
 $ sudo gem install bundler`
@@ -99,6 +102,8 @@ $ bundle install
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
+<br />
 
 #### Setup [package.json](https://docs.npmjs.com/files/package.json) file
 
