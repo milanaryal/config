@@ -8,9 +8,15 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
+<br />
+
 ---
 
+<br />
+
 ## Checklist
+
+<br />
 
 ### 1. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
@@ -22,6 +28,8 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 * Get Ubuntu distro from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) or with [command-line/script](https://docs.microsoft.com/en-us/windows/wsl/install-manual) on Powershell
 
+<br />
+
 ### 2. Prepare OS
 
 Update OS packages
@@ -29,6 +37,8 @@ Update OS packages
 ```bash
 $ sudo apt-get update -y && sudo apt-get upgrade -y
 ```
+
+<br />
 
 ### 3. Setup Ruby and gems
 
@@ -71,6 +81,8 @@ Place the `Gemfile` in the project folder and install gem:
 $ bundle install
 ```
 
+<br />
+
 ### 4. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 
 Node.js v12.x:
@@ -106,7 +118,11 @@ Eg. Install Gulp on a project folder (which install on `node_modules` folder)
 $ sudo npm install gulp gulp-cli --save-dev
 ```
 
+<br />
+
 --- 
+
+<br />
 
 #### How to flush DNS in Ubuntu?
 
@@ -122,7 +138,11 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
+<br />
+
 ---
+
+<br />
 
 #### Summary
 
@@ -145,6 +165,8 @@ sudo /etc/init.d/nscd restart
 - node.js
   + gulp.js
 ```
+
+<br />
 
 ---
 
