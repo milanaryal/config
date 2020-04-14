@@ -18,46 +18,91 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 
 ### 2. Prepare OS
 
-* Update OS packages: `$ sudo apt-get update -y && sudo apt-get upgrade -y`
+#### Update OS packages
+
+```bash
+$ sudo apt-get update -y && sudo apt-get upgrade -y
+```
 
 ### 3. Setup Ruby and gems
 
-* Install Ruby: `$ sudo apt-get ruby`
+#### [Install Ruby]:(https://www.ruby-lang.org/en/documentation/installation/#apt) directly
 
-Or,
-
-*  Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/):
-
-``` bash
-$ sudo apt-add-repository ppa:brightbox/ruby-ng
+```bash
+$ sudo apt-get install ruby-full`
 ```
 
-* update system `$ sudo apt-get update`
+**Or,**
 
-* Installing Specific Ruby versions:
+#### [Install Ruby via version manager](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)
+
+Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/):
+
+``` bash
+$ sudo sudo apt-add-repository ppa:brightbox/ruby-ng
+```
+
+Update system 
+
+```bash
+$ sudo apt-get update
+```
+
+Install specific Ruby version:
 
 ``` bash
 $ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 ```
+#### Install essential gems for our project
 
-* Install Bundler gem: `$ sudo gem install bundler`
+Install Bundler gem: 
 
-* Place the `Gemfile` in the project folder and install gem: `$ bundle install`
+```bash
+$ sudo gem install bundler`
+```
+
+Place the `Gemfile` in the project folder and install gem: 
+
+```bash
+$ bundle install
+```
 
 ### 4. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 
-* Node.js v12.x:
+Node.js v12.x:
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-* Install Gulp command line tools: `sudo npm install -g gulp-cli`
+Go to project file, and [create a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
 
----
+Setup required [dependencies ](https://docs.npmjs.com/files/package.json#dependencies)
 
-**How to flush DNS in Ubuntu?**
+And install them via terminal
+
+```bash
+$ sudo npm install
+```
+
+Or,
+
+Eg. Install Gulp command line tools globally:
+
+```bash
+$ sudo npm install -g gulp-cli
+```
+
+Eg. Install Gulp on a project folder (which install on `node_modules` folder)
+
+```bash
+$ sudo npm install gulp gulp-cli --save-dev
+```
+
+--- 
+
+#### How to flush DNS in Ubuntu?
 
 Install nscd using the following command if not yet
 
