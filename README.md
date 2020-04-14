@@ -18,7 +18,15 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 
 <br />
 
-### 1. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+### 1. Install required apps
+
+* [Atom](https://atom.io/) text editor
+* [GitHub Desktop](https://desktop.github.com/)
+* [Visual Studio Code](https://code.visualstudio.com/) code editor
+
+<br />
+
+### 2. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 * Before installing Ubuntu distro enable WSL feature with the Powershell
 
@@ -30,9 +38,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 <br />
 
-### 2. Prepare OS
+### 3. Prepare OS
 
-Update OS packages
+* Update OS packages
 
 ```bash
 $ sudo apt-get update -y && sudo apt-get upgrade -y
@@ -40,15 +48,15 @@ $ sudo apt-get update -y && sudo apt-get upgrade -y
 
 <br />
 
-### 3. Setup Ruby and gems
+### 4. Setup Ruby and gems
 
-[Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) directly
+*  [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) directly
 
 ```bash
 $ sudo apt-get install ruby-full`
 ```
 
-Or, [Install Ruby via version manager](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)
+*  Or, [Install Ruby via version manager](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)
 
 Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/):
 
@@ -56,26 +64,26 @@ Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.c
 $ sudo sudo apt-add-repository ppa:brightbox/ruby-ng
 ```
 
-Update system 
+* Update system 
 
 ```bash
 $ sudo apt-get update
 ```
 
-Install specific Ruby version:
+*  Install specific Ruby version:
 
 ``` bash
 $ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 ```
 #### Install essential gems for our project
 
-Install Bundler gem: 
+* Install Bundler gem: 
 
 ```bash
 $ sudo gem install bundler`
 ```
 
-Place the `Gemfile` in the project folder and install gem: 
+* Place the `Gemfile` in the project folder and install gem: 
 
 ```bash
 $ bundle install
@@ -83,9 +91,9 @@ $ bundle install
 
 <br />
 
-### 4. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
+### 5. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 
-Node.js v12.x:
+* Node.js v12.x:
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -104,7 +112,7 @@ sudo apt-get install -y nodejs
 $ sudo npm install
 ```
 
-Or, Install them directly via CLI
+* Or, Install them directly via CLI
 
 Eg. Install Gulp command line tools globally:
 
