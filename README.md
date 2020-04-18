@@ -50,6 +50,12 @@ $ sudo apt-get update -y && sudo apt-get upgrade -y
 
 ### 4. Setup Ruby and gems
 
+* Install [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
+
+```bash
+$ sudo apt-get install zlib1g zlib1g-dev
+```
+
 * Check stable Ruby version on [GitHub Pages](https://pages.github.com/versions/)
 
 * [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) directly
