@@ -50,7 +50,9 @@ $ sudo apt-get update -y && sudo apt-get upgrade -y
 
 ### 4. Setup Ruby and gems
 
-*  [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) directly
+* Check stable Ruby version on [GitHub Pages](https://pages.github.com/versions/)
+
+* [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) directly
 
 ```bash
 $ sudo apt-get install ruby-full
