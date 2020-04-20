@@ -31,10 +31,14 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 For VS Code:
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [Homepage](https://editorconfig.org/)
 * [scss-lint](https://marketplace.visualstudio.com/items?itemName=adamwalzer.scss-lint)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 For Atom:
 * [EditorConfig](https://github.com/sindresorhus/atom-editorconfig#readme) - [Homepage](https://editorconfig.org/)
 * [linter-scss-lint](https://atom.io/packages/linter-scss-lint)
+* [linter-eslint](https://atom.io/packages/linter-eslint)
+
+<br />
 
 ### 2. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
