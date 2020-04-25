@@ -206,6 +206,10 @@ sudo /etc/init.d/nscd restart
   + gulp
 ```
 
+#### Coding guide
+
+* camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for CSS. Boom!
+
 <br />
 
 ---
