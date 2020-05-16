@@ -8,13 +8,7 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
----
-
-<br>
-
 ## Checklist
-
-<br />
 
 ## 1. Install required apps
 
@@ -22,7 +16,7 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 * [GitHub Desktop](https://desktop.github.com/)
 * [Visual Studio Code](https://code.visualstudio.com/) code editor
 
-### Install Plugins
+## Install Plugins
 
 #### VS Code plugins:
 - [x] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [*Homepage*](https://editorconfig.org/)
@@ -150,9 +144,7 @@ $ sudo npm install gulp gulp-cli --save-dev
 
 ---
 
-<br>
-
-### How to flush DNS in Ubuntu?
+## How to flush DNS in Ubuntu?
 
 Install nscd using the following command if not yet
 
@@ -166,11 +158,7 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
----
-
-<br>
-
-### Summary
+## Summary
 
 ```bash
 - text editor
