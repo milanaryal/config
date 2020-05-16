@@ -2,47 +2,49 @@
 
 OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows) // *[Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)*
 
-<br />
+<br>
 
 ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png)
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
-<br />
-
 ---
 
-<br />
+<br>
 
 ## Checklist
 
 <br />
 
-### 1. Install required apps
+## 1. Install required apps
 
 * [Atom](https://atom.io/) text editor
 * [GitHub Desktop](https://desktop.github.com/)
 * [Visual Studio Code](https://code.visualstudio.com/) code editor
 
-<br />
+### Install Plugins
 
-#### Install Plugins
-
-For VS Code:
+#### VS Code plugins:
 - [x] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [*Homepage*](https://editorconfig.org/)
 - [x] [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - [*Homepage*](https://stylelint.io/)
 - [ ] [scss-lint](https://marketplace.visualstudio.com/items?itemName=adamwalzer.scss-lint)
 - [x] [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - [*Homepage*](https://eslint.org/)
+- [x] [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - [*Homepage*](https://github.com/yzhang-gh/vscode-markdown)
+- [ ] [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - [*Homepage*](https://prettier.io/)
+- [ ] Emmet - [*Homepage*](https://www.emmet.io/)
+- [ ] [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) - [*Homepage*](https://github.com/formulahendry/vscode-auto-rename-tag)
+- [ ] [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) - [*Homepage*](https://github.com/CoenraadS/BracketPair)
+- [ ] [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) - [*Homepage*](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)
+- [ ] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) - [*Homepage*](https://github.com/xabikos/vscode-javascript)
+- [ ] [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - [*Homepage*](https://github.com/ritwickdey/vscode-live-server)
 
-For Atom:
+#### Atom plugins:
 - [x] [EditorConfig](https://github.com/sindresorhus/atom-editorconfig) - [*Homepage*](https://editorconfig.org/)
 - [x] [linter-stylelint](https://github.com/AtomLinter/linter-stylelint) - [*Homepage*](https://stylelint.io/)
 - [ ] [linter-scss-lint](https://atom.io/packages/linter-scss-lint)
 - [x] [linter-eslint](https://atom.io/packages/linter-eslint) - [*Homepage*](https://eslint.org/)
 
-<br />
-
-### 2. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+## 2. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 * Before installing Ubuntu distro enable WSL feature with the Powershell
 
@@ -52,9 +54,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 * Get Ubuntu distro from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) or with [command-line/script](https://docs.microsoft.com/en-us/windows/wsl/install-manual) on Powershell
 
-<br />
-
-### 3. Prepare OS
+## 3. Prepare OS
 
 * Update OS packages
 
@@ -62,9 +62,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 $ sudo apt-get update -y && sudo apt-get upgrade -y
 ```
 
-<br />
-
-### 4. Setup Ruby and gems
+## 4. Setup Ruby and gems
 
 * Install [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
 
@@ -100,9 +98,7 @@ $ sudo apt-get update
 $ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 ```
 
-<br />
-
-#### Install essential gems for our project
+### Install essential gems for our project
 
 * Install [Bundler](https://bundler.io/) gem:
 
@@ -116,9 +112,7 @@ $ sudo gem install bundler
 $ bundle install
 ```
 
-<br />
-
-### 5. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
+## 5. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 
 * Node.js v12.x:
 
@@ -128,9 +122,7 @@ $ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
-<br />
-
-#### Setup [package.json](https://docs.npmjs.com/files/package.json) file
+### Setup [package.json](https://docs.npmjs.com/files/package.json) file
 
 * Go to project file, and [create a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
 
@@ -156,13 +148,11 @@ Eg. Install Gulp on a project folder (which install on `node_modules` folder)
 $ sudo npm install gulp gulp-cli --save-dev
 ```
 
-<br />
-
 ---
 
-<br />
+<br>
 
-#### How to flush DNS in Ubuntu?
+### How to flush DNS in Ubuntu?
 
 Install nscd using the following command if not yet
 
@@ -176,13 +166,11 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
-<br />
-
 ---
 
-<br />
+<br>
 
-#### Summary
+### Summary
 
 ```bash
 - text editor
@@ -205,9 +193,8 @@ sudo /etc/init.d/nscd restart
   + npm
   + gulp
 ```
----
 
-### Coding guide
+## Coding guide
 
 camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for CSS. Boom!
 
@@ -221,7 +208,7 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 * [Rouge code highlighter - List of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)
 * [jEmoji searcher by Muan](https://emoji.muan.co/)
 
-<br />
+<br>
 
 ---
 
