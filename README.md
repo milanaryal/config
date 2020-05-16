@@ -10,13 +10,13 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 
 ## Checklist
 
-## 1. Install required apps
+## 1. Install required apps for our projects
 
+* [Visual Studio Code](https://code.visualstudio.com/) code editor
 * [Atom](https://atom.io/) text editor
 * [GitHub Desktop](https://desktop.github.com/)
-* [Visual Studio Code](https://code.visualstudio.com/) code editor
 
-## Install Plugins
+### Install plugins for our IDE
 
 #### VS Code plugins:
 - [x] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [*Homepage*](https://editorconfig.org/)
