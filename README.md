@@ -80,7 +80,7 @@ $ sudo apt-get install ruby-full
 Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/):
 
 ``` bash
-$ sudo sudo apt-add-repository ppa:brightbox/ruby-ng
+$ sudo apt-add-repository ppa:brightbox/ruby-ng
 ```
 
 * Update system
