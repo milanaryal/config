@@ -161,6 +161,20 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
+## How to Access Your Linux (WSL) Files in Windows 10?
+
+There are two ways to access your Linux files. First, the easy one. From within the Windows Subsystem for Linux environment you want to browse, run the following command:
+
+```text
+explorer.exe .
+```
+
+You can also access them directly at a `\\wsl$` path. In File Explorer or any other Windows application that can browse files, navigate to the following path:
+
+```text
+\\wsl$
+```
+
 ## Summary
 
 ```bash
