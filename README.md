@@ -1,16 +1,12 @@
 <p align="center">
   <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
 </p>
-
+<!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
 <br>
 
 # Config
 
 OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows) // *[Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)*
-
-<br>
-
-![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png)
   
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
@@ -25,7 +21,7 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 ### Install plugins for our IDE
 
 #### VS Code plugins:
-- [X] [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) - [*Homepage*](https://github.com/Microsoft/vscode-remote-release)
+- [X] [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) - [*Homepage*](https://github.com/Microsoft/vscode-remote-release) - Unique Identifier @id:ms-vscode-remote.remote-wsl
 - [x] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [*Homepage*](https://editorconfig.org/)
 - [x] [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - [*Homepage*](https://stylelint.io/)
 - [ ] [scss-lint](https://marketplace.visualstudio.com/items?itemName=adamwalzer.scss-lint) - [*Homepage*](https://github.com/sds/scss-lint)
@@ -63,13 +59,13 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 * Update OS packages
 
 ```bash
-$ sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y
 ```
 
 Or, new method
 
 ```bash
-$ sudo apt update -y && sudo apt upgrade -y
+sudo apt update -y && sudo apt upgrade -y
 ```
 
 ## 4. Setup Ruby and gems
@@ -77,7 +73,7 @@ $ sudo apt update -y && sudo apt upgrade -y
 * Install [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
 
 ```bash
-$ sudo apt-get install zlib1g zlib1g-dev
+sudo apt-get install zlib1g zlib1g-dev
 ```
 
 * Check stable Ruby version on [GitHub Pages](https://pages.github.com/versions/)
@@ -109,13 +105,13 @@ source ~/.bashrc
 * Install [Bundler](https://bundler.io/) gem:
 
 ```bash
-$ gem install bundler
+gem install bundler
 ```
 
 * Place the `Gemfile` in the project folder and install gem:
 
 ```bash
-$ bundle install
+bundle install
 ```
 
 ## 5. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
@@ -143,7 +139,7 @@ nodejs --version
 * And install them via terminal
 
 ```bash
-$ npm install
+npm install
 ```
 
 * Or, Install them directly via CLI
@@ -159,6 +155,8 @@ Eg. Install Webpack on a project folder (which install on `node_modules` folder)
 ```bash
 npm install webpack webpack-cli --save-dev
 ```
+
+To run package on project installed folder `npx webpack`
 
 ---
 
@@ -190,6 +188,8 @@ You can also access them directly at a `\\wsl$` path. In File Explorer or any ot
 \\wsl$
 ```
 
+Or, simply `win key + r` => type `\\wsl$` => Press Enter
+
 ## Essential apt commands
 
 To install package: `sudo apt-get install -y <package name>` or new method `sudo apt install -y <package name>`
@@ -218,14 +218,12 @@ Remove repo: `udo apt-add-repository -r <ppa: repo name> && apt update`
   + ubuntu
 
 - ruby
-  + ruby
-  + ruby-dev
+  + ruby-full
+  + build-essential
   + bundler
-  + bundle gh-pages
 
 - node.js
   + npm
-  + gulp
 ```
 
 ## Coding guide
