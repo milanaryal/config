@@ -192,17 +192,53 @@ Or, simply `win key + r` => type `\\wsl$` => Press Enter
 
 ## Essential apt commands
 
-To install package: `sudo apt-get install -y <package name>` or new method `sudo apt install -y <package name>`
+To install package: `sudo apt-get install -y <package_name>` or new method `sudo apt install -y <package_name>`
 
-To search package: `apt-cache search <package name>`
+To search package: `apt-cache search <package_name>` or `apt search <package_name>`
 
-To know the package version before install: `apt-cache policy <package name>`
+To know the package version before install: `apt-cache policy <package_name>` or `apt policy <package_name>`
 
-To delete package and its dependecies: `sudo apt-get --purge autoremove <package name>`
+To delete package and its dependecies: `sudo apt-get --purge autoremove <package_name>` or `apt --purge remove <package_name>`
 
-Add repo: `sudo apt-add-repository <ppa: repo name> && apt update`
+Add repo: `sudo apt-add-repository <ppa: repo_name> && apt update`
 
-Remove repo: `udo apt-add-repository -r <ppa: repo name> && apt update`
+Remove repo: `udo apt-add-repository -r <ppa: repo_name> && apt update`
+
+---
+
+## Useful Debian/Ubuntu commands
+
+List installed packages: `apt list --installed`
+
+List installed upgradable packages: `apt list --upgradable`
+
+Search for packages: `apt search <search_term>` or `apt-cache search <search_term>`
+
+Show details for packages: `apt show <search_term>` or `apt-cache show <search_term>`
+
+Install package: `sudo apt install -y <package_name>` or `sudo apt-get install -y <package_name>`
+
+Remove the binary files of a package: `apt remove <package_name>` or `apt-get remove <package_name>`
+
+Remove everything related to a package, including its configuration files (purge everything): `apt purge <package_name>` or `apt-get purge <package_name>`
+
+Remove package and everything related to a package: `apt remove --purge <package_name>` or `apt-get remove --purge <package_name>`
+
+Upgrade all installed packages: `sudo apt upgrade` or `sudo apt-get upgrade`
+
+Upgrade one specific package: `sudo apt upgrade <package_name>` or `sudo apt-get upgrade <package_name>`
+
+Often see update and upgrade together like this: `sudo apt update && sudo apt upgrade -y` or `sudo apt-get update && sudo apt-get upgrade -y`
+
+Upgrade vs dist-upgrade (not recommended on production systems): `sudo apt full-upgrade` or `apt-get dist-upgrade`
+
+List all services on a Linux system: `service --status-all`
+
+Show Ubuntu version information: `lsb_release -a`
+
+Blog post:
+  - [apt v1.0](https://mvogt.wordpress.com/2014/04/04/apt-1-0/)
+  - [apt v1.1](https://mvogt.wordpress.com/2015/11/30/apt-1-1-released/)
 
 ## Summary
 
