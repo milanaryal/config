@@ -19,6 +19,7 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 ### Install plugins for our IDE
 
 #### VS Code plugins:
+- [X] [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) - [*Homepage*](https://github.com/Microsoft/vscode-remote-release)
 - [x] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [*Homepage*](https://editorconfig.org/)
 - [x] [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - [*Homepage*](https://stylelint.io/)
 - [ ] [scss-lint](https://marketplace.visualstudio.com/items?itemName=adamwalzer.scss-lint) - [*Homepage*](https://github.com/sds/scss-lint)
@@ -59,6 +60,12 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 $ sudo apt-get update -y && sudo apt-get upgrade -y
 ```
 
+Or, new method
+
+```bash
+$ sudo apt update -y && sudo apt upgrade -y
+```
+
 ## 4. Setup Ruby and gems
 
 * Install [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
@@ -69,38 +76,34 @@ $ sudo apt-get install zlib1g zlib1g-dev
 
 * Check stable Ruby version on [GitHub Pages](https://pages.github.com/versions/)
 
-* [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) directly
+* [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) with OS native apt
 
 ```bash
-$ sudo apt-get install ruby-full
+sudo apt update
+
+sudo apt install ruby-full build-essential zlib1g-dev
 ```
 
-*  Or, [Install Ruby via version manager](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)
-
-Add optimised Ruby Version Manager repo from [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/):
-
-``` bash
-$ sudo apt-add-repository ppa:brightbox/ruby-ng
-```
-
-* Update system
+And, [avoid installing Ruby Gems as the root user](https://jekyllrb.com/docs/installation/ubuntu/)
 
 ```bash
-$ sudo apt-get update
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
-*  Install specific Ruby version:
-
-``` bash
-$ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
-```
+* Or, Install Ruby via version manager for latest stable version
+  - [rbenv](https://github.com/rbenv/rbenv)
+  - [rvm](https://rvm.io/)
+  - [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/) - Jekyll [install guide](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)
 
 ### Install essential gems for our project
 
 * Install [Bundler](https://bundler.io/) gem:
 
 ```bash
-$ sudo gem install bundler
+$ gem install bundler
 ```
 
 * Place the `Gemfile` in the project folder and install gem:
@@ -111,13 +114,19 @@ $ bundle install
 
 ## 5. [Setup Node.js](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 
-* Node.js v12.x:
+* Install nodejs with OS native apt
 
 ```bash
-$ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt update
 
-$ sudo apt-get install -y nodejs
+sudo apt install -y nodejs npm
+
+nodejs --version
 ```
+
+* Or, for latest stable version
+  - [Install Node.js and npm from NodeSource](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+  - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 ### Setup [package.json](https://docs.npmjs.com/files/package.json) file
 
@@ -128,21 +137,21 @@ $ sudo apt-get install -y nodejs
 * And install them via terminal
 
 ```bash
-$ sudo npm install
+$ npm install
 ```
 
 * Or, Install them directly via CLI
 
-Eg. Install Gulp command line tools globally:
+Eg. Install Webpack command line tools globally:
 
 ```bash
-$ sudo npm install -g gulp-cli
+npm install -g webpack-cli
 ```
 
-Eg. Install Gulp on a project folder (which install on `node_modules` folder)
+Eg. Install Webpack on a project folder (which install on `node_modules` folder)
 
 ```bash
-$ sudo npm install gulp gulp-cli --save-dev
+npm install webpack webpack-cli --save-dev
 ```
 
 ---
@@ -174,6 +183,15 @@ You can also access them directly at a `\\wsl$` path. In File Explorer or any ot
 ```text
 \\wsl$
 ```
+
+## Essential apt commands
+
+To install package: `sudo apt-get install -y <package name>` or new method `sudo apt install -y <package name>`
+To search package: `apt-cache search <package name>`
+To know the package version before install: `apt-cache policy <package name>`
+To delete package and its dependecies: `sudo apt-get --purge autoremove <package name>`
+Add repo: `sudo apt-add-repository <ppa: repo name> && apt update`
+Remove repo: `udo apt-add-repository -r <ppa: repo name> && apt update`
 
 ## Summary
 
