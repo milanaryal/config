@@ -192,29 +192,39 @@ Or, simply `win key + r` => type `\\wsl$` => Press Enter
 
 ## Essential apt commands
 
-To install package: `sudo apt-get install -y <package_name>` or new method `sudo apt install -y <package_name>`
+To install package: `sudo apt install -y <package_name>` or `sudo apt-get install -y <package_name>`
 
-To search package: `apt-cache search <package_name>` or `apt search <package_name>`
+To search package: `apt search <package_name>` or `apt-cache search <package_name>`
 
-To know the package version before install: `apt-cache policy <package_name>` or `apt policy <package_name>`
+To know the package version before install: `apt policy <package_name>` or `apt-cache policy <package_name>`
 
-To delete package and its dependecies: `sudo apt-get --purge autoremove <package_name>` or `apt --purge remove <package_name>`
+To delete package and its dependecies: `apt --purge remove <package_name>` or `sudo apt-get --purge autoremove <package_name>`
 
 Add repo: `sudo apt-add-repository <ppa: repo_name> && apt update`
 
 Remove repo: `udo apt-add-repository -r <ppa: repo_name> && apt update`
 
----
-
 ## Useful Debian/Ubuntu commands
 
-List installed packages: `apt list --installed`
+List all packages: `apt list` && `apt list | more` && `apt list | grep foo`
+
+List installed packages: `apt list --installed` && `apt list --installed | grep {pkgNameHere}`
 
 List installed upgradable packages: `apt list --upgradable`
 
+List package dependency: `apt depends {pkgNameHere}` eg. `apt depends sudo`
+
+How do I performs recursive dependency listings similar to apt-cache? `apt rdepends {pkgNames}` eg. `apt rdepends sudo`
+
+How do I hold a package? Package holding means it can not be upgraded till you run unhold on it again. The syntax is: `apt hold {pkgName}` eg. `apt hold sudo`
+
+How do I unhold a package? `apt unhold {pkgName}` eg. `apt unhold sudo`
+
 Search for packages: `apt search <search_term>` or `apt-cache search <search_term>`
 
-Show details for packages: `apt show <search_term>` or `apt-cache show <search_term>`
+See policy of apt package: `apt list -a {pkgNameHere}` eg. `apt list -a sudo` or `apt policy <package_name>` or `apt-cache policy <package_name>`
+
+Show detail info for packages: `apt show <search_term>` or `apt-cache show <search_term>`
 
 Install package: `sudo apt install -y <package_name>` or `sudo apt-get install -y <package_name>`
 
@@ -223,6 +233,8 @@ Remove the binary files of a package: `apt remove <package_name>` or `apt-get re
 Remove everything related to a package, including its configuration files (purge everything): `apt purge <package_name>` or `apt-get purge <package_name>`
 
 Remove package and everything related to a package: `apt remove --purge <package_name>` or `apt-get remove --purge <package_name>`
+
+The autoremove option to remove packages that were automatically installed to satisfy dependencies for other packages and are now no longer needed as dependencies changed or the package(s) needing them were removed in the meantime: `sudo apt autoremove` && `sudo apt --purge autoremove`
 
 Upgrade all installed packages: `sudo apt upgrade` or `sudo apt-get upgrade`
 
@@ -234,7 +246,26 @@ Upgrade vs dist-upgrade (not recommended on production systems): `sudo apt full-
 
 List all services on a Linux system: `service --status-all`
 
-Show Ubuntu version information: `lsb_release -a`
+Show Ubuntu version information: `lsb_release -a` && `uname -r`
+
+How do I edit the source information file i.e. /etc/apt/sources.list? `sudo apt edit-sources`
+
+## apt command options
+
+From the apt(8) command man page:
+
+```text
+list - list packages based on package names
+search - search in package descriptions
+show - show package details
+install - install packages
+remove - remove packages
+autoremove - Remove automatically all unused packages
+update - update list of available packages
+upgrade - upgrade the system by installing/upgrading packages
+full-upgrade - upgrade the system by removing/installing/upgrading packages
+edit-sources - edit the source information file  
+```
 
 Blog post:
   - [apt v1.0](https://mvogt.wordpress.com/2014/04/04/apt-1-0/)
