@@ -1,6 +1,8 @@
 <p align="center">
-  <img width="768" alt="Annotation 2020-06-13 144828" src="https://user-images.githubusercontent.com/9361180/84564895-f8391400-ad84-11ea-925e-d6915c703450.png">
+  <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
 </p>
+
+<br>
 
 # Config
 
