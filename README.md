@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="768" alt="Annotation 2020-06-13 144828" src="https://user-images.githubusercontent.com/9361180/84564895-f8391400-ad84-11ea-925e-d6915c703450.png">
+</p>
+
 # Config
 
 OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows) // *[Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)*
@@ -5,7 +9,7 @@ OS: [Ubuntu on Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu
 <br>
 
 ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png)
-
+  
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
 ## Checklist
@@ -187,10 +191,15 @@ You can also access them directly at a `\\wsl$` path. In File Explorer or any ot
 ## Essential apt commands
 
 To install package: `sudo apt-get install -y <package name>` or new method `sudo apt install -y <package name>`
+
 To search package: `apt-cache search <package name>`
+
 To know the package version before install: `apt-cache policy <package name>`
+
 To delete package and its dependecies: `sudo apt-get --purge autoremove <package name>`
+
 Add repo: `sudo apt-add-repository <ppa: repo name> && apt update`
+
 Remove repo: `udo apt-add-repository -r <ppa: repo name> && apt update`
 
 ## Summary
