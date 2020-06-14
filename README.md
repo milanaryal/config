@@ -7,21 +7,18 @@
 <p align="center">
   <a href="https://ubuntu.com/wsl">Ubuntu on WSL</a>
   <br>
-  <a href="https://docs.microsoft.com/en-us/windows/wsl/"><em>Windows Subsystem for Linux (WSL)</em></a>
+  <a href="https://aka.ms/wsl"><em>Windows Subsystem for Linux (WSL)</em></a>
 </p>
-  
+
+<br>
+
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
 ## Checklist
 
-<!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
-<!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
-<!-- <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux"><em>Windows Subsystem for Linux (WSL)</em></a> -->
-<!-- <a href="https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows">Ubuntu on Windows 10</a> -->
-
 ## 1. Install required apps for our projects
 
-* [Update your Windows version](ms-settings:windowsupdate)
+* <a href="ms-settings:windowsupdate">Update your Windows version</a>
 * [WSL2](https://aka.ms/wsl2)
 * Try the new cross-platform [PowerShell](https://aka.ms/pscore6) - on [GitHub](https://github.com/PowerShell/PowerShell)
 * [Microsoft Terminal](https://aka.ms/terminal) - on [Github](https://github.com/microsoft/terminal)
@@ -338,3 +335,8 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 ---
 
 [![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
+
+<!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
+<!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
+<!-- <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux"><em>Windows Subsystem for Linux (WSL)</em></a> -->
+<!-- <a href="https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows">Ubuntu on Windows 10</a> -->
