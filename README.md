@@ -12,11 +12,7 @@
   
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
-<p align="center">
-  <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
-</p>
-
-<h2 align="center">Checklist</h2>
+## Checklist
 
 <!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
 <!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
@@ -25,6 +21,10 @@
 
 ## 1. Install required apps for our projects
 
+* [Update your Windows version](ms-settings:windowsupdate)
+* [WSL2](https://aka.ms/wsl2)
+* Try the new cross-platform [PowerShell](https://aka.ms/pscore6) - on [GitHub](https://github.com/PowerShell/PowerShell)
+* [Microsoft Terminal](https://aka.ms/terminal) - on [Github](https://github.com/microsoft/terminal)
 * [Visual Studio Code](https://code.visualstudio.com/) code editor
 * [Atom](https://atom.io/) text editor
 * [GitHub Desktop](https://desktop.github.com/)
@@ -169,7 +169,9 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
----
+<p align="center">
+  <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
+</p>
 
 ## How to flush DNS in Ubuntu?
 
@@ -281,7 +283,20 @@ edit-sources - edit the source information file
 Blog post:
   - [apt v1.0](https://mvogt.wordpress.com/2014/04/04/apt-1-0/)
   - [apt v1.1](https://mvogt.wordpress.com/2015/11/30/apt-1-1-released/)
+  
+## [WSL Utilities](https://wslutiliti.es/)
 
+```text
+wslfetch - creates colorful Wsl information
+```
+
+## PowerShell command options
+
+```text
+$PSversionTable or $PSVersionTable.PSVersion => Check your PowerShell Version
+$host.version or get-host|Select-Object version => Alternative to check PowerShell Version
+wsl --list --verbose or wsl -l -v => Verifying WSL distro platform
+```
 ## Summary
 
 ```bash
