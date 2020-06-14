@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="768" alt="wslfetch annotation 2020-06-14 120051" src="https://user-images.githubusercontent.com/9361180/84586216-44449100-ae37-11ea-9486-0cb74447aa7f.png">
+  <img width="768" alt="wslfetch annotation 2020-06-14 145922" src="https://user-images.githubusercontent.com/9361180/84589641-bf19a600-ae4f-11ea-8c13-5b28e37938b4.png">  
 </p>
 <h1 align="center">Config</h1>
 <p align="center">
@@ -168,6 +168,12 @@ To run package on project installed folder `npx webpack`
 
 <p align="center">
   <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
+</p>
+
+<br>
+
+<p align="center">
+  <img width="768" alt="Annotation 2020-06-14 145755" src="https://user-images.githubusercontent.com/9361180/84589645-c2ad2d00-ae4f-11ea-8c18-551471bfc4ed.png">
 </p>
 
 <br>
@@ -346,6 +352,7 @@ Location path:
 
 ```text
 {
+    // Startup as Ubuntu profile {guid}.
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
     "profiles":
     {
@@ -420,6 +427,7 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 
 [![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
 
+<!-- <img width="866" alt="wslfetch annotation 2020-06-14 120051" src="https://user-images.githubusercontent.com/9361180/84586216-44449100-ae37-11ea-9486-0cb74447aa7f.png"> -->
 <!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
 <!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
 <!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
