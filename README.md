@@ -1,9 +1,7 @@
 <p align="center">
-  <img width="768" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png">
+  <img width="768" alt="wslfetch annotation 2020-06-14 120051" src="https://user-images.githubusercontent.com/9361180/84586216-44449100-ae37-11ea-9486-0cb74447aa7f.png">
 </p>
-
 <h1 align="center">Config</h1>
-
 <p align="center">
   <a href="https://ubuntu.com/wsl">Ubuntu on WSL</a>
   <br>
@@ -18,7 +16,6 @@
 
 ## 1. Install required apps for our projects
 
-* <a href="ms-settings:windowsupdate">Update your Windows version</a>
 * [WSL2](https://aka.ms/wsl2)
 * Try the new cross-platform [PowerShell](https://aka.ms/pscore6) - on [GitHub](https://github.com/PowerShell/PowerShell)
 * [Microsoft Terminal](https://aka.ms/terminal) - on [Github](https://github.com/microsoft/terminal)
@@ -166,9 +163,15 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
+<br>
+
 <p align="center">
   <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
 </p>
+
+<br>
+
+---
 
 ## How to flush DNS in Ubuntu?
 
@@ -254,6 +257,8 @@ Often see update and upgrade together like this: `sudo apt update && sudo apt up
 
 Upgrade vs dist-upgrade (not recommended on production systems): `sudo apt full-upgrade` or `apt-get dist-upgrade`
 
+Upgrade to the latest version of Ubuntu XX.XX LTS on WSL: `sudo do-release-upgrade -d`
+
 List all services on a Linux system: `service --status-all`
 
 Show Ubuntu version information: `lsb_release -a` && `uname -r`
@@ -284,7 +289,7 @@ Blog post:
 ## [WSL Utilities](https://wslutiliti.es/)
 
 ```text
-wslfetch - creates colorful Wsl information
+wslfetch - creates colorful wsl information
 ```
 
 ## PowerShell command options
@@ -294,6 +299,20 @@ $PSversionTable or $PSVersionTable.PSVersion => Check your PowerShell Version
 $host.version or get-host|Select-Object version => Alternative to check PowerShell Version
 wsl --list --verbose or wsl -l -v => Verifying WSL distro platform
 ```
+
+## Windows Terminal – A `profiles.json` (settings) file
+
+Location path:
+
+```text
+%userprofile%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState
+```
+Learn more about:
+
+- [documentation on settings](https://aka.ms/terminal-documentation)
+- [profiles schema](https://aka.ms/terminal-profiles-schema)
+- [adding custom color schemes](https://aka.ms/terminal-color-schemes)
+
 ## Summary
 
 ```bash
@@ -336,6 +355,7 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 
 [![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
 
+<!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
 <!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
 <!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
 <!-- <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux"><em>Windows Subsystem for Linux (WSL)</em></a> -->
