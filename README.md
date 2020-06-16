@@ -278,19 +278,54 @@ How do I edit the source information file i.e. /etc/apt/sources.list? `sudo apt 
 
 ## apt command options
 
-From the apt(8) command man page:
+From the [apt(8)](https://manpages.debian.org/stretch/apt/apt.8.en.html) command man page:
+
+#### How to check `apt` version??
+
+On terminal:
+
+`$ apt`
+
+Results: 
+
+`apt <version> <distro_name> (<architecture>)`
+
+For eg. <br>
+On Debain `apt 1.8.2.1 (amd64)` <br>
+On Ubuntu `apt 2.0.2ubuntu0.1 (amd64)`
+
+Specific demo (on Ubuntu):
 
 ```text
-list - list packages based on package names
-search - search in package descriptions
-show - show package details
-install - install packages
-remove - remove packages
-autoremove - Remove automatically all unused packages
-update - update list of available packages
-upgrade - upgrade the system by installing/upgrading packages
-full-upgrade - upgrade the system by removing/installing/upgrading packages
-edit-sources - edit the source information file  
+apt 2.0.2ubuntu0.1 (amd64)
+Usage: apt [options] command
+
+apt is a commandline package manager and provides commands for
+searching and managing as well as querying information about packages.
+It provides the same functionality as the specialized APT tools,
+like apt-get and apt-cache, but enables options more suitable for
+interactive use by default.
+
+Most used commands:
+  list - list packages based on package names
+  search - search in package descriptions
+  show - show package details
+  install - install packages
+  reinstall - reinstall packages
+  remove - remove packages
+  autoremove - Remove automatically all unused packages
+  update - update list of available packages
+  upgrade - upgrade the system by installing/upgrading packages
+  full-upgrade - upgrade the system by removing/installing/upgrading packages
+  edit-sources - edit the source information file
+  satisfy - satisfy dependency strings
+
+See apt(8) for more information about the available commands.
+Configuration options and syntax is detailed in apt.conf(5).
+Information about how to configure sources can be found in sources.list(5).
+Package and version choices can be expressed via apt_preferences(5).
+Security details are available in apt-secure(8).
+                                        This APT has Super Cow Powers.
 ```
 
 Blog post:
