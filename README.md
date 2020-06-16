@@ -268,7 +268,11 @@ Upgrade to the latest version of Ubuntu XX.XX LTS on WSL: `sudo do-release-upgra
 
 List all services on a Linux system: `service --status-all`
 
-Show Ubuntu version information: `lsb_release -a` && `uname -r`
+Check what version of Linux kernel your system is running on: `uname -r`
+
+Check what version of Linux system you are running on: `cat /etc/issue` or `cat /etc/os-release` or `lsb_release -a`
+
+Show the current more accurate info about Debian update point releases: `cat /etc/debian_version` or `apt install lsb-release && lsb_release -da`
 
 How do I edit the source information file i.e. /etc/apt/sources.list? `sudo apt edit-sources`
 
@@ -325,7 +329,7 @@ wsl -d <distro_name> => open required linux distro
 wsl --set-version <distro_name> 2 => open linux distro in wsl2
 wsl --set-version <distro_name> 1 => open linux distro in wsl1
 wsl --set-default-version 2 => make wsl2 default
-wsl --shutdown => terminate all WSL instances
+wsl --shutdown=> terminate all WSL instances
 ```
 
 ## [WSL2: Use the Linux file system for faster performance](https://docs.microsoft.com/en-us/windows/wsl/compare-versions)
@@ -364,13 +368,22 @@ Location path:
         "list":
         [
             {
-                // Make changes here to the Windows.Terminal.Wsl profile.
+                // Make changes here to the Ubuntu WSL profile.
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl",
                 "colorScheme": "One Half Dark",
-                "startingDirectory": "\\\\wsl$\\Ubuntu-18.04\\home\\[linux-user]"
+                "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\milan"
+            },
+            {
+                // Make changes here to the Debian WSL profile.
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl",
+                "colorScheme": "Solarized Dark",
+                "startingDirectory" : "\\\\wsl$\\Debian\\home\\milan"
             }
         ]
     }
@@ -384,6 +397,15 @@ Learn more about:
 - [documentation on settings](https://aka.ms/terminal-documentation)
 - [profiles schema](https://aka.ms/terminal-profiles-schema)
 - [adding custom color schemes](https://aka.ms/terminal-color-schemes)
+
+## Windows run command
+
+```text
+%temp%
+%appdata%
+%userprofile%
+%programfiles%
+```
 
 ## Summary
 
