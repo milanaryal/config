@@ -12,6 +12,24 @@
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
+## Table of contents
+
+1. [Install required apps for our projects](#1-install-required-apps-for-our-projects)
+2. [Install WSL](#2-install-wsl)
+3. [Prepare OS](#3-prepare-os)
+4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
+5. [Setup Node.js](#5-setup-nodejs)
+6. [How to flush DNS in Ubuntu?](#how-to-flush-dns-in-ubuntu)
+7. [How to Access Your Linux (WSL) Files in Windows 10?](#how-to-access-your-linux-wsl-files-in-windows-10)
+8. [Essential apt commands](#essential-apt-commands)
+9. [Useful Debian/Ubuntu commands](#useful-debianubuntu-commands)
+10. [apt command options](#apt-command-options)
+11. [WSL Utilities](#wsl-utilities)
+12. [PowerShell command options](#powershell-command-options)
+13. [Windows Terminal – A profiles.json (settings) file](#windows-terminal--a-profilesjson-settings-file)
+14. [Windows run command](#windows-run-command)
+15. [Coding guide](#coding-guide)
+
 ## Checklist
 
 ## 1. Install required apps for our projects
@@ -275,6 +293,8 @@ Check what version of Linux system you are running on: `cat /etc/issue` or `cat 
 Show the current more accurate info about Debian update point releases: `cat /etc/debian_version` or `apt install lsb-release && lsb_release -da`
 
 How do I edit the source information file i.e. /etc/apt/sources.list? `sudo apt edit-sources`
+
+Locate the executable file associated with a given command: `which -a [filename]` eg. `which sh` -> `/usr/bin/sh` or `which -a sh` -> `/usr/bin/sh` `/bin/sh`
 
 ## apt command options
 
