@@ -1,14 +1,13 @@
 <p align="center">
-  <img width="768" alt="wslfetch annotation 2020-06-14 145922" src="https://user-images.githubusercontent.com/9361180/84589641-bf19a600-ae4f-11ea-8c13-5b28e37938b4.png">  
+  <img width="768" alt="wslfetch annotation 2020-06-14 145922" src="https://user-images.githubusercontent.com/9361180/84589641-bf19a600-ae4f-11ea-8c13-5b28e37938b4.png" />  
 </p>
 <h1 align="center">Config</h1>
 <p align="center">
   <a href="https://ubuntu.com/wsl">Ubuntu on WSL</a>
-  <br>
+  <br />
   <a href="https://aka.ms/wsl"><em>Windows Subsystem for Linux (WSL)</em></a>
 </p>
-
-<br>
+<br />
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
@@ -28,7 +27,8 @@
 12. [PowerShell command options](#powershell-command-options)
 13. [Windows Terminal – A profiles.json (settings) file](#windows-terminal--a-profilesjson-settings-file)
 14. [Windows run command](#windows-run-command)
-15. [Coding guide](#coding-guide)
+15. [Custom bash prompt](#custom-bash-prompt)
+16. [Coding guide](#coding-guide)
 
 ## Checklist
 
@@ -83,12 +83,6 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 * Update OS packages
 
 ```bash
-sudo apt-get update -y && sudo apt-get upgrade -y
-```
-
-Or, new method
-
-```bash
 sudo apt update -y && sudo apt upgrade -y
 ```
 
@@ -97,7 +91,7 @@ sudo apt update -y && sudo apt upgrade -y
 * Install [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
 
 ```bash
-sudo apt-get install zlib1g zlib1g-dev
+sudo apt install zlib1g zlib1g-dev
 ```
 
 * Check stable Ruby version on [GitHub Pages](https://pages.github.com/versions/)
@@ -108,6 +102,8 @@ sudo apt-get install zlib1g zlib1g-dev
 sudo apt update
 
 sudo apt install ruby-full build-essential zlib1g-dev
+
+ruby --version
 ```
 
 And, [avoid installing Ruby Gems as the root user](https://jekyllrb.com/docs/installation/ubuntu/)
@@ -145,9 +141,10 @@ bundle install
 ```bash
 sudo apt update
 
-sudo apt install -y nodejs npm
+sudo apt install -y nodejs npm build-essential
 
 nodejs --version
+npm --version
 ```
 
 * Or, for latest stable version
@@ -182,19 +179,17 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
-<br>
+---
 
+<br />
 <p align="center">
-  <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png">
+  <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png" />
 </p>
-
-<br>
-
+<br />
 <p align="center">
-  <img width="768" alt="Annotation 2020-06-14 145755" src="https://user-images.githubusercontent.com/9361180/84589645-c2ad2d00-ae4f-11ea-8c18-551471bfc4ed.png">
+  <img width="768" alt="Annotation 2020-06-14 145755" src="https://user-images.githubusercontent.com/9361180/84589645-c2ad2d00-ae4f-11ea-8c18-551471bfc4ed.png" />
 </p>
-
-<br>
+<br />
 
 ---
 
@@ -203,7 +198,7 @@ To run package on project installed folder `npx webpack`
 Install nscd using the following command if not yet
 
 ``` bash
-sudo apt-get install nscd
+sudo apt install nscd
 ```
 
 Flush DNS Cache in Ubuntu by restarting the nscd
@@ -306,12 +301,12 @@ On terminal:
 
 `$ apt`
 
-Results: 
+Results:
 
 `apt <version> <distro_name> (<architecture>)`
 
-For eg. <br>
-On Debain `apt 1.8.2.1 (amd64)` <br>
+For eg. <br />
+On Debain `apt 1.8.2.1 (amd64)` <br />
 On Ubuntu `apt 2.0.2ubuntu0.1 (amd64)`
 
 Specific demo (on Ubuntu):
@@ -351,7 +346,7 @@ Security details are available in apt-secure(8).
 Blog post:
   - [apt v1.0](https://mvogt.wordpress.com/2014/04/04/apt-1-0/)
   - [apt v1.1](https://mvogt.wordpress.com/2015/11/30/apt-1-1-released/)
-  
+
 ## [WSL Utilities](https://wslutiliti.es/)
 
 ```text
@@ -399,7 +394,7 @@ Project files that you are working with using a WSL distribution (like Ubuntu) m
 
 You can access your Linux root file system with Windows apps and tools like File Explorer. Try opening a Linux distribution (like Ubuntu), be sure that you are in the Linux home directory by entering this command: `cd ~`. Then open your Linux file system in File Explorer by entering (don't forget the period at the end): `explorer.exe .`
 
-## Windows Terminal – A `profiles.json` (settings) file
+## Windows Terminal – a `profiles.json` (settings) file
 
 Location path:
 
@@ -462,6 +457,31 @@ Learn more about:
 %programfiles%
 ```
 
+## Custom bash prompt
+
+```bash
+# ----------------------------------------------------------------------
+# | Add the following line at the bottom of ~/.bashrc file             |
+# | this will override the default configuration                       |
+# ----------------------------------------------------------------------
+
+# Add Git branch if its present to PS1
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# $ _ Custom bash prompt
+#
+# Includes custom character for the prompt, path, and Git branch name.
+export PS1='\[\e]0;${PWD##*/} — bash — ${COLUMNS}x${LINES}\a\]\[\033[00;35m\]→ \[\033[01;36m\]\w\[\033[01;33m\]$(parse_git_branch) \[\033[31m\]\$\[\033[0m\] '
+```
+
+or, a community bash framework:
+ - [Bash-it](https://github.com/Bash-it/bash-it)
+
+or, create a custom PS1 variable for your bash:
+ - [Bash Prompt Generator](https://github.com/Scriptim/bash-prompt-generator)
+
 ## Summary
 
 ```bash
@@ -498,7 +518,7 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 * [Rouge code highlighter - List of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)
 * [jEmoji searcher by Muan](https://emoji.muan.co/)
 
-<br>
+<br />
 
 ---
 
