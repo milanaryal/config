@@ -21,23 +21,22 @@
   3. [Prepare OS](#3-prepare-os)
   4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
   5. [Setup Node.js](#5-setup-nodejs)
-
 - How-to
-  - [How to flush DNS in Ubuntu?](#how-to-flush-dns-in-ubuntu)
-  - [How to Access Your Linux (WSL) Files in Windows 10?](#how-to-access-your-linux-wsl-files-in-windows-10)
   - [Debain/ Ubuntu commands](#debain-ubuntu-commands)
     - [Custom bash prompt](#custom-bash-prompt)
     - [Essential apt commands](#essential-apt-commands)
     - [Useful Debian/Ubuntu commands](#useful-debianubuntu-commands)
     - [apt command options](#apt-command-options)
     - [WSL Utilities](#wsl-utilities)
+    - [How to Access Your Linux (WSL) Files in Windows 10?](#how-to-access-your-linux-wsl-files-in-windows-10)
     - [Developing in WSL](#developing-in-wal)
+    - [How to flush DNS in Ubuntu?](#how-to-flush-dns-in-ubuntu)
   - [Windows commands](#windows-commands)
     - [Windows run command](#windows-run-command)
     - [PowerShell command options](#powershell-command-options)
     - [WSL2: Use the Linux file system for faster performance](#wsl2-use-the-linux-file-system-for-faster-performance)
     - [Windows Terminal – A profiles.json (settings) file](#windows-terminal--a-profilesjson-settings-file)
-  - [Coding guide](#coding-guide)
+- [Coding guide](#coding-guide)
 
 ---
 
@@ -204,38 +203,6 @@ To run package on project installed folder `npx webpack`
 
 ---
 
-## How to flush DNS in Ubuntu?
-
-Install nscd using the following command if not yet
-
-``` bash
-sudo apt install nscd
-```
-
-Flush DNS Cache in Ubuntu by restarting the nscd
-
-``` bash
-sudo /etc/init.d/nscd restart
-```
-
-## How to Access Your Linux (WSL) Files in Windows 10?
-
-There are two ways to access your Linux files. First, the easy one. From within the Windows Subsystem for Linux environment you want to browse, run the following command:
-
-```text
-explorer.exe .
-```
-
-You can also access them directly at a `\\wsl$` path. In File Explorer or any other Windows application that can browse files, navigate to the following path:
-
-```text
-\\wsl$
-```
-
-Or, simply `win key + r` => type `\\wsl$` => Press Enter
-
----
-
 ## Debain/ Ubuntu commands
 
 ## Custom bash prompt
@@ -394,6 +361,22 @@ wslfetch - creates colorful wsl information
 vmstat -s - virtual machine system usage stats
 ```
 
+## How to access your Linux (WSL) files in Windows 10?
+
+There are two ways to access your Linux files. First, the easy one. From within the Windows Subsystem for Linux environment you want to browse, run the following command:
+
+```text
+explorer.exe .
+```
+
+You can also access them directly at a `\\wsl$` path. In File Explorer or any other Windows application that can browse files, navigate to the following path:
+
+```text
+\\wsl$
+```
+
+Or, simply `win key + r` => type `\\wsl$` => Press Enter
+
 ## [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
 ```text
@@ -406,6 +389,20 @@ code --remote wsl+<distro name> <path in WSL>
 
 # for example:
 code --remote wsl+Ubuntu /home/jim/projects/c
+```
+
+## How to flush DNS in Ubuntu?
+
+Install nscd using the following command if not yet
+
+``` bash
+sudo apt install nscd
+```
+
+Flush DNS Cache in Ubuntu by restarting the nscd
+
+``` bash
+sudo /etc/init.d/nscd restart
 ```
 
 ---
@@ -505,10 +502,11 @@ Learn more about:
 
 ## Summary
 
-```bash
+```text
 - text editor
   + vs code
   + atom
+  + editorconfig extension
 
 - git
   + github desktop
