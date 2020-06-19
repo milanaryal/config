@@ -189,6 +189,8 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
+<p align="right"><a href="#table-of-contents">Back to top</a></p>
+
 ---
 
 <br />
@@ -200,6 +202,9 @@ To run package on project installed folder `npx webpack`
   <img width="768" alt="Annotation 2020-06-14 145755" src="https://user-images.githubusercontent.com/9361180/84589645-c2ad2d00-ae4f-11ea-8c18-551471bfc4ed.png" />
 </p>
 <br />
+
+
+<p align="right"><a href="#table-of-contents">Back to top</a></p>
 
 ---
 
@@ -405,6 +410,8 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
+<p align="right"><a href="#table-of-contents">Back to top</a></p>
+
 ---
 
 ## Windows commands
@@ -498,6 +505,8 @@ Learn more about:
 - [profiles schema](https://aka.ms/terminal-profiles-schema)
 - [adding custom color schemes](https://aka.ms/terminal-color-schemes)
 
+<p align="right"><a href="#table-of-contents">Back to top</a></p>
+
 ---
 
 ## Summary
@@ -523,6 +532,8 @@ Learn more about:
   + npm
 ```
 
+<p align="right"><a href="#table-of-contents">Back to top</a></p>
+
 ---
 
 ## Coding guide
@@ -540,6 +551,8 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 * [jEmoji searcher by Muan](https://emoji.muan.co/)
 
 <br />
+
+<p align="right"><a href="#table-of-contents">Back to top</a></p>
 
 ---
 
