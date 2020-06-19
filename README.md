@@ -11,24 +11,35 @@
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
+---
+
 ## Table of contents
 
-1. [Install required apps for our projects](#1-install-required-apps-for-our-projects)
-2. [Install WSL](#2-install-wsl)
-3. [Prepare OS](#3-prepare-os)
-4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
-5. [Setup Node.js](#5-setup-nodejs)
-6. [How to flush DNS in Ubuntu?](#how-to-flush-dns-in-ubuntu)
-7. [How to Access Your Linux (WSL) Files in Windows 10?](#how-to-access-your-linux-wsl-files-in-windows-10)
-8. [Essential apt commands](#essential-apt-commands)
-9. [Useful Debian/Ubuntu commands](#useful-debianubuntu-commands)
-10. [apt command options](#apt-command-options)
-11. [WSL Utilities](#wsl-utilities)
-12. [PowerShell command options](#powershell-command-options)
-13. [Windows Terminal – A profiles.json (settings) file](#windows-terminal--a-profilesjson-settings-file)
-14. [Windows run command](#windows-run-command)
-15. [Custom bash prompt](#custom-bash-prompt)
-16. [Coding guide](#coding-guide)
+- Checklist
+  1. [Install required apps for our projects](#1-install-required-apps-for-our-projects)
+  2. [Install WSL](#2-install-wsl)
+  3. [Prepare OS](#3-prepare-os)
+  4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
+  5. [Setup Node.js](#5-setup-nodejs)
+
+- How-to
+  - [How to flush DNS in Ubuntu?](#how-to-flush-dns-in-ubuntu)
+  - [How to Access Your Linux (WSL) Files in Windows 10?](#how-to-access-your-linux-wsl-files-in-windows-10)
+  - [Debain/ Ubuntu commands](#debain-ubuntu-commands)
+    - [Custom bash prompt](#custom-bash-prompt)
+    - [Essential apt commands](#essential-apt-commands)
+    - [Useful Debian/Ubuntu commands](#useful-debianubuntu-commands)
+    - [apt command options](#apt-command-options)
+    - [WSL Utilities](#wsl-utilities)
+    - [Developing in WSL](#developing-in-wal)
+  - [Windows commands](#windows-commands)
+    - [Windows run command](#windows-run-command)
+    - [PowerShell command options](#powershell-command-options)
+    - [WSL2: Use the Linux file system for faster performance](#wsl2-use-the-linux-file-system-for-faster-performance)
+    - [Windows Terminal – A profiles.json (settings) file](#windows-terminal--a-profilesjson-settings-file)
+  - [Coding guide](#coding-guide)
+
+---
 
 ## Checklist
 
@@ -223,6 +234,35 @@ You can also access them directly at a `\\wsl$` path. In File Explorer or any ot
 
 Or, simply `win key + r` => type `\\wsl$` => Press Enter
 
+---
+
+## Debain/ Ubuntu commands
+
+## Custom bash prompt
+
+```bash
+# ----------------------------------------------------------------------
+# | Add the following line at the bottom of ~/.bashrc file             |
+# | this will override the default configuration                       |
+# ----------------------------------------------------------------------
+
+# Add Git branch if its present to PS1
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# $ _ Custom bash prompt
+#
+# Includes custom character for the prompt, path, and Git branch name.
+export PS1='\[\e]0;${PWD##*/} — bash — ${COLUMNS}x${LINES}\a\]\[\033[00;35m\]→ \[\033[01;36m\]\w\[\033[01;33m\]$(parse_git_branch) \[\033[31m\]\$\[\033[0m\] '
+```
+
+or, a community bash framework:
+ - [Bash-it](https://github.com/Bash-it/bash-it)
+
+or, create a custom PS1 variable for your bash:
+ - [Bash Prompt Generator](https://github.com/Scriptim/bash-prompt-generator)
+
 ## Essential apt commands
 
 To install package: `sudo apt install -y <package_name>` or `sudo apt-get install -y <package_name>`
@@ -295,7 +335,7 @@ Locate the executable file associated with a given command: `which -a [filename]
 
 From the [apt(8)](https://manpages.debian.org/stretch/apt/apt.8.en.html) command man page:
 
-#### How to check `apt` version??
+### How to check `apt` version??
 
 On terminal:
 
@@ -354,7 +394,7 @@ wslfetch - creates colorful wsl information
 vmstat -s - virtual machine system usage stats
 ```
 
-### [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
+## [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
 ```text
 # open vs code in wsl
@@ -366,6 +406,19 @@ code --remote wsl+<distro name> <path in WSL>
 
 # for example:
 code --remote wsl+Ubuntu /home/jim/projects/c
+```
+
+---
+
+## Windows commands
+
+## Windows run command
+
+```text
+%temp%
+%appdata%
+%userprofile%
+%programfiles%
 ```
 
 ## PowerShell command options
@@ -448,39 +501,7 @@ Learn more about:
 - [profiles schema](https://aka.ms/terminal-profiles-schema)
 - [adding custom color schemes](https://aka.ms/terminal-color-schemes)
 
-## Windows run command
-
-```text
-%temp%
-%appdata%
-%userprofile%
-%programfiles%
-```
-
-## Custom bash prompt
-
-```bash
-# ----------------------------------------------------------------------
-# | Add the following line at the bottom of ~/.bashrc file             |
-# | this will override the default configuration                       |
-# ----------------------------------------------------------------------
-
-# Add Git branch if its present to PS1
-parse_git_branch() {
- git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-# $ _ Custom bash prompt
-#
-# Includes custom character for the prompt, path, and Git branch name.
-export PS1='\[\e]0;${PWD##*/} — bash — ${COLUMNS}x${LINES}\a\]\[\033[00;35m\]→ \[\033[01;36m\]\w\[\033[01;33m\]$(parse_git_branch) \[\033[31m\]\$\[\033[0m\] '
-```
-
-or, a community bash framework:
- - [Bash-it](https://github.com/Bash-it/bash-it)
-
-or, create a custom PS1 variable for your bash:
- - [Bash Prompt Generator](https://github.com/Scriptim/bash-prompt-generator)
+---
 
 ## Summary
 
@@ -503,6 +524,8 @@ or, create a custom PS1 variable for your bash:
 - node.js
   + npm
 ```
+
+---
 
 ## Coding guide
 
