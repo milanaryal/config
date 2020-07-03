@@ -352,6 +352,7 @@ sudo /etc/init.d/nscd restart
 %appdata%
 %userprofile%
 %programfiles%
+shell:RecycleBinFolder
 ```
 
 ## PowerShell command options
