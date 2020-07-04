@@ -69,6 +69,7 @@
 - [ ] [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) - [*Homepage*](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)
 - [ ] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) - [*Homepage*](https://github.com/xabikos/vscode-javascript)
 - [ ] [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - [*Homepage*](https://github.com/ritwickdey/vscode-live-server)
+- [ ] [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) - [*Homepage*](https://github.com/ritwickdey/vscode-live-sass-compiler)
 
 #### Atom plugins:
 - [x] [EditorConfig](https://github.com/sindresorhus/atom-editorconfig) - [*Homepage*](https://editorconfig.org/)
@@ -187,7 +188,7 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
-<p align="right"><a href="#table-of-contents">Back to top</a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ---
 
@@ -201,8 +202,7 @@ To run package on project installed folder `npx webpack`
 </p>
 <br />
 
-
-<p align="right"><a href="#table-of-contents">Back to top</a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ---
 
@@ -263,6 +263,28 @@ or, a community bash framework:
 
 or, create a custom PS1 variable for your bash:
  - [Bash Prompt Generator](https://github.com/Scriptim/bash-prompt-generator)
+
+### How to execute atom from bash?
+
+Here's a guide:
+
+1. Open `~/.bashrc` in a text editor
+
+2. At the bottom, add a new function:
+
+```bash
+# Atom alias (https://github.com/atom/atom/issues/18126#issuecomment-463226481)
+atom() {
+  target_path=$(wslpath -a -w $(readlink -f $1)) # resolve the path
+  (/mnt/c/Windows/System32/cmd.exe /C "atom.cmd $target_path" &> /dev/null) # open the path
+}
+```
+
+3. Save the file and exit the text editor
+
+4. Run `. ~/.bashrc`
+
+The command `atom` will now work properly!
 
 ## Essential apt commands
 
@@ -339,7 +361,7 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
-<p align="right"><a href="#table-of-contents">Back to top</a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ---
 
@@ -435,7 +457,7 @@ Learn more about:
 - [profiles schema](https://aka.ms/terminal-profiles-schema)
 - [adding custom color schemes](https://aka.ms/terminal-color-schemes)
 
-<p align="right"><a href="#table-of-contents">Back to top</a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ---
 
@@ -462,7 +484,7 @@ Learn more about:
   + npm
 ```
 
-<p align="right"><a href="#table-of-contents">Back to top</a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ---
 
@@ -482,7 +504,7 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 
 <br />
 
-<p align="right"><a href="#table-of-contents">Back to top</a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ---
 
