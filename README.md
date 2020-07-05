@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="768" alt="wslfetch annotation 2020-06-14 145922" src="https://user-images.githubusercontent.com/9361180/84589641-bf19a600-ae4f-11ea-8c13-5b28e37938b4.png" />  
+  <img width="768" alt="wslfetch annotation 2020-07-05 102241" src="https://user-images.githubusercontent.com/9361180/86525639-9b270e80-bea9-11ea-9e01-631086c8dfc2.png" />  
 </p>
 <h1 align="center">Config</h1>
 <p align="center">
@@ -188,7 +188,7 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
-<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
 
 ---
 
@@ -202,7 +202,7 @@ To run package on project installed folder `npx webpack`
 </p>
 <br />
 
-<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
 
 ---
 
@@ -361,7 +361,7 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
-<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
 
 ---
 
@@ -457,7 +457,7 @@ Learn more about:
 - [profiles schema](https://aka.ms/terminal-profiles-schema)
 - [adding custom color schemes](https://aka.ms/terminal-color-schemes)
 
-<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
 
 ---
 
@@ -484,7 +484,7 @@ Learn more about:
   + npm
 ```
 
-<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
 
 ---
 
@@ -504,12 +504,13 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 
 <br />
 
-<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
 
 ---
 
 [![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
 
+<!-- <img width="866" alt="wslfetch annotation 2020-06-14 145922" src="https://user-images.githubusercontent.com/9361180/84589641-bf19a600-ae4f-11ea-8c13-5b28e37938b4.png" /> -->
 <!-- <img width="866" alt="wslfetch annotation 2020-06-14 120051" src="https://user-images.githubusercontent.com/9361180/84586216-44449100-ae37-11ea-9486-0cb74447aa7f.png"> -->
 <!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
 <!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
