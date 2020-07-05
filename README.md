@@ -188,7 +188,7 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
-<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
 ---
 
@@ -202,7 +202,7 @@ To run package on project installed folder `npx webpack`
 </p>
 <br />
 
-<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
 ---
 
@@ -361,7 +361,7 @@ Flush DNS Cache in Ubuntu by restarting the nscd
 sudo /etc/init.d/nscd restart
 ```
 
-<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
 ---
 
@@ -457,7 +457,7 @@ Learn more about:
 - [profiles schema](https://aka.ms/terminal-profiles-schema)
 - [adding custom color schemes](https://aka.ms/terminal-color-schemes)
 
-<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
 ---
 
@@ -484,7 +484,7 @@ Learn more about:
   + npm
 ```
 
-<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
 ---
 
@@ -504,7 +504,7 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 
 <br />
 
-<p align="right"><a href="#table-of-contents">To the top <b aria-hidden="true">↑</b></a></p>
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
 ---
 
