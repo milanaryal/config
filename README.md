@@ -11,6 +11,23 @@
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
+## Dotfiles
+
+| File | Description |
+| --- | --- |
+| `.bashrc` | Customizes the Terminal prompt and echoes the currently checked out Git branch. |
+| `.gitconfig` | Global Git configuration to specify my name and email, shortcuts, colors, and more. |
+| `.gitignore` | The Git ignore file that I use everywhere. |
+| `.gitattributes` | The Git attributes file that I use everywhere. |
+
+## Shell script (WIP)
+
+This repository includes a shell script for executing the bulk of the configuration process. First, install and agree to terms for WSL, then download and run Windows Terminal. Then, enter the following in Terminal:
+
+```bash
+cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAryal/config/master/config.sh > ~/Downloads/config.sh && bash ~/Downloads/config.sh
+```
+
 ---
 
 ## Table of contents
@@ -241,6 +258,8 @@ parse_git_branch() {
 }
 ```
 
+`...`
+
 ```bash
 # $ _ Custom bash prompt
 #
@@ -331,7 +350,7 @@ You can also access them directly at a `\\wsl$` path. In File Explorer or any ot
 \\wsl$
 ```
 
-Or, simply `win key + r` => type `\\wsl$` => Press Enter
+Or, simply `win key + r` → type `\\wsl$` → Press Enter
 
 ## [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
@@ -380,15 +399,15 @@ shell:RecycleBinFolder
 ## PowerShell command options
 
 ```text
-$PSversionTable or $PSVersionTable.PSVersion => Check your PowerShell Version
-$host.version or get-host|Select-Object version => Alternative to check PowerShell Version
-wsl => open default linux distro
-wsl --list --verbose or wsl -l -v => list all distro and wsl version
-wsl -d <distro_name> => open required linux distro
-wsl --set-version <distro_name> 2 => open linux distro in wsl2
-wsl --set-version <distro_name> 1 => open linux distro in wsl1
-wsl --set-default-version 2 => make wsl2 default
-wsl --shutdown=> terminate all WSL instances
+$PSversionTable or $PSVersionTable.PSVersion    → Check your PowerShell Version
+$host.version or get-host|Select-Object version → Alternative to check PowerShell Version
+wsl                               → open default linux distro
+wsl --list --verbose or wsl -l -v → list all distro and wsl version
+wsl -d <distro_name>              → open required linux distro
+wsl --set-version <distro_name> 2 → open linux distro in wsl2
+wsl --set-version <distro_name> 1 → open linux distro in wsl1
+wsl --set-default-version 2       → make wsl2 default
+wsl --shutdown                    → terminate all WSL instances
 ```
 
 ## [WSL2: Use the Linux file system for faster performance](https://docs.microsoft.com/en-us/windows/wsl/compare-versions)
