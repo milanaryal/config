@@ -393,7 +393,9 @@ sudo /etc/init.d/nscd restart
 %appdata%
 %userprofile%
 %programfiles%
-shell:RecycleBinFolder
+shell:RecycleBinFolder → start recycle bin folder
+cmd                    → start command prompt app
+wt                     → start windows terminal app
 ```
 
 ## PowerShell command options
