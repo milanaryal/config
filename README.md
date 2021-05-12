@@ -63,13 +63,11 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 * Try the new cross-platform [PowerShell](https://aka.ms/pscore6) - on [GitHub](https://github.com/PowerShell/PowerShell)
 * [Microsoft Terminal](https://aka.ms/terminal) - on [Github](https://github.com/microsoft/terminal)
 * [Visual Studio Code](https://code.visualstudio.com/) code editor
-* [Atom](https://atom.io/) text editor
 * [GitHub Desktop](https://desktop.github.com/)
 * GitHub cloning path: `\\wsl$\Ubuntu\home\milan\GitHub` or `\\wsl$\<distro_name>\home\<user_name>\GitHub`
 
-### Install plugins for our IDE
+### Essential plugins for VS Code
 
-#### VS Code plugins:
 - [X] [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) - [*Homepage*](https://github.com/Microsoft/vscode-remote-release) - Unique Identifier @id:ms-vscode-remote.remote-wsl
 - [x] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - [*Homepage*](https://editorconfig.org/)
 - [x] [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - [*Homepage*](https://stylelint.io/)
@@ -87,12 +85,6 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 - [ ] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) - [*Homepage*](https://github.com/xabikos/vscode-javascript)
 - [ ] [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - [*Homepage*](https://github.com/ritwickdey/vscode-live-server)
 - [ ] [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) - [*Homepage*](https://github.com/ritwickdey/vscode-live-sass-compiler)
-
-#### Atom plugins:
-- [x] [EditorConfig](https://github.com/sindresorhus/atom-editorconfig) - [*Homepage*](https://editorconfig.org/)
-- [x] [linter-stylelint](https://github.com/AtomLinter/linter-stylelint) - [*Homepage*](https://stylelint.io/)
-- [ ] [linter-scss-lint](https://atom.io/packages/linter-scss-lint) - [*Homepage*](https://github.com/sds/scss-lint)
-- [x] [linter-eslint](https://atom.io/packages/linter-eslint) - [*Homepage*](https://eslint.org/)
 
 ## 2. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
@@ -114,20 +106,12 @@ sudo apt update -y && sudo apt upgrade -y
 
 ## 4. Setup Ruby and gems
 
-* Install [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
-
-```bash
-sudo apt install zlib1g zlib1g-dev
-```
-
-* Check stable Ruby version on [GitHub Pages](https://pages.github.com/versions/)
-
 * [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt) with OS native apt
 
 ```bash
-sudo apt update
+sudo apt update -y
 
-sudo apt install ruby-full build-essential zlib1g-dev
+sudo apt install -y ruby-full build-essential zlib1g-dev
 
 ruby --version
 ```
@@ -145,6 +129,12 @@ source ~/.bashrc
   - [rbenv](https://github.com/rbenv/rbenv)
   - [rvm](https://rvm.io/)
   - [Brightbox](https://www.brightbox.com/docs/ruby/ubuntu/) - Jekyll [install guide](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)
+
+* [zlib](https://www.zlib.net/) for Nokogiri (鋸) Ruby gem
+
+```bash
+sudo apt install zlib1g zlib1g-dev
+```
 
 ### Install essential gems for our project
 
@@ -165,7 +155,7 @@ bundle install
 * Install nodejs with OS native apt
 
 ```bash
-sudo apt update
+sudo apt update -y
 
 sudo apt install -y nodejs npm build-essential
 
@@ -204,20 +194,6 @@ npm install webpack webpack-cli --save-dev
 ```
 
 To run package on project installed folder `npx webpack`
-
-<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
-
----
-
-<br />
-<p align="center">
-  <img width="768" alt="Annotation 2020-06-13 145332" src="https://user-images.githubusercontent.com/9361180/84564991-cd9b8b00-ad85-11ea-89e0-17b073e06bb2.png" />
-</p>
-<br />
-<p align="center">
-  <img width="768" alt="Annotation 2020-06-14 145755" src="https://user-images.githubusercontent.com/9361180/84589645-c2ad2d00-ae4f-11ea-8c18-551471bfc4ed.png" />
-</p>
-<br />
 
 <p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
@@ -504,9 +480,8 @@ Learn more about:
 ## Summary
 
 ```text
-- text editor
+- ide
   + vs code
-  + atom
   + editorconfig extension
 
 - git
@@ -549,11 +524,3 @@ camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for
 ---
 
 [![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
-
-<!-- <img width="866" alt="wslfetch annotation 2020-06-14 145922" src="https://user-images.githubusercontent.com/9361180/84589641-bf19a600-ae4f-11ea-8c13-5b28e37938b4.png" /> -->
-<!-- <img width="866" alt="wslfetch annotation 2020-06-14 120051" src="https://user-images.githubusercontent.com/9361180/84586216-44449100-ae37-11ea-9486-0cb74447aa7f.png"> -->
-<!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
-<!-- <img width="866" alt="Annotation 2020-06-14 094227" src="https://user-images.githubusercontent.com/9361180/84584383-85cb4100-ae23-11ea-8736-38e7d74101dc.png"> -->
-<!-- ![screenshot](https://user-images.githubusercontent.com/9361180/62588374-3d7af280-b8e5-11e9-9957-1618de71c6d0.png) -->
-<!-- <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux"><em>Windows Subsystem for Linux (WSL)</em></a> -->
-<!-- <a href="https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows">Ubuntu on Windows 10</a> -->
