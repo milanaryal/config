@@ -259,28 +259,6 @@ or, a community bash framework:
 or, create a custom PS1 variable for your bash:
  - [Bash Prompt Generator](https://github.com/Scriptim/bash-prompt-generator)
 
-### How to execute atom from bash?
-
-Here's a guide:
-
-1. Open `~/.bashrc` in a text editor
-
-2. At the bottom, add a new function:
-
-```bash
-# Atom alias (https://github.com/atom/atom/issues/18126#issuecomment-463226481)
-atom() {
-  target_path=$(wslpath -a -w $(readlink -f $1)) # resolve the path
-  (/mnt/c/Windows/System32/cmd.exe /C "atom.cmd $target_path" &> /dev/null) # open the path
-}
-```
-
-3. Save the file and exit the text editor
-
-4. Run `. ~/.bashrc`
-
-The command `atom` will now work properly!
-
 ## Essential apt commands
 
 List most used commands: `apt`
