@@ -57,7 +57,7 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 - GitHub cloning path: <br />
   `\\wsl$\Ubuntu\home\milan\github` or <br />
   `\\wsl$\<distro_name>\home\<user_name>\github`
-- (Homebrew)[https://brew.sh/],
+- [Homebrew](https://brew.sh/),
   view source on [Github](https://github.com/Homebrew/brew)
 
 ### 2. Install WSL
