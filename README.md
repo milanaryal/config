@@ -7,7 +7,11 @@
   <br />
   <a href="https://aka.ms/wsl"><em>Windows Subsystem for Linux (WSL)</em></a>
 </p>
-<br />
+<div align="center">
+
+[![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
+
+</div><br />
 
 **Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
@@ -156,10 +160,6 @@ npm install webpack webpack-cli --save-dev
 
 To run package on project installed folder `npx webpack`
 
-<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
-
----
-
 ## Summary
 
 ```text
@@ -180,10 +180,7 @@ To run package on project installed folder `npx webpack`
 
 - node.js
   + npm
+  + build-essential
 ```
 
 <p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
-
----
-
-[![License](https://img.shields.io/github/license/MilanAryal/config.svg?branch=master)](https://github.com/MilanAryal/config/blob/master/LICENSE)
