@@ -134,7 +134,7 @@ npm --version
 ```
 
 Node.js version manager
-- [Install Node.js and npm from NodeSource](hhttps://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+- [Install Node.js and npm from NodeSource](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 - [nodenv](https://github.com/nodenv/nodenv)
 - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
