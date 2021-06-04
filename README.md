@@ -42,18 +42,23 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 
 ## Checklist
 
-### 1. Install required apps for our projects
+### 1. Required apps for our projects
 
-- [WSL2](https://aka.ms/wsl2)
+- [WSL2](https://aka.ms/wsl2),
+  view [issues](https://github.com/microsoft/WSL/issues)
 - Try the new cross-platform [PowerShell](https://aka.ms/pscore6),
   view source on [GitHub](https://github.com/PowerShell/PowerShell)
 - [Microsoft Terminal](https://aka.ms/terminal),
   view source on [Github](https://github.com/microsoft/terminal)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [GitHub Desktop](https://desktop.github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/),
+  view source on [Github](https://github.com/Microsoft/vscode)
+- [GitHub Desktop](https://desktop.github.com/),
+  view source on [Github](https://github.com/desktop/desktop)
 - GitHub cloning path: <br />
-  `\\wsl$\Ubuntu\home\milan\GitHub` or <br />
-  `\\wsl$\<distro_name>\home\<user_name>\GitHub`
+  `\\wsl$\Ubuntu\home\milan\github` or <br />
+  `\\wsl$\<distro_name>\home\<user_name>\github`
+- (Homebrew)[https://brew.sh/],
+  view source on [Github](https://github.com/Homebrew/brew)
 
 ### 2. Install WSL
 
@@ -117,8 +122,8 @@ bundle install
 
 ### 5. Setup Node.js
 
-Install [nodejs](https://github.com/nodesource/distributions/blob/master/README.md#deb)
-with OS native apt
+Install [nodejs](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+with OS native APT
 
 ```bash
 sudo apt update -y

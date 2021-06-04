@@ -24,4 +24,4 @@ Remove repo: `udo apt-add-repository -r <ppa: repo_name> && apt update`
 
 Locate the executable file associated with a given command: `which -a [filename]`
 
-Not to consider recommended packages as a dependency to install. `sudo apt --no-install-recommends` [...COMMAND]
+Not to consider recommended packages as a dependency to install: `sudo apt --no-install-recommends` [...COMMAND]
