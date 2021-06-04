@@ -28,49 +28,43 @@ This repository includes a shell script for executing the bulk of the configurat
 cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAryal/config/master/config.sh > ~/Downloads/config.sh && bash ~/Downloads/config.sh
 ```
 
----
-
 ## Table of contents
 
-- Checklist
-  1. [Install required apps for our projects](#1-install-required-apps-for-our-projects)
-  2. [Install WSL](#2-install-wsl)
-  3. [Prepare OS](#3-prepare-os)
-  4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
-  5. [Setup Node.js](#5-setup-nodejs)
-- [Coding guide](#coding-guide)
-
----
+1. [Install required apps for our projects](#1-install-required-apps-for-our-projects)
+2. [Install WSL](#2-install-wsl)
+3. [Prepare OS](#3-prepare-os)
+4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
+5. [Setup Node.js](#5-setup-nodejs)
 
 ## Checklist
 
-## 1. Install required apps for our projects
+### 1. Install required apps for our projects
 
 - [WSL2](https://aka.ms/wsl2)
 - Try the new cross-platform [PowerShell](https://aka.ms/pscore6),
-  [GitHub](https://github.com/PowerShell/PowerShell)
+  view source on [GitHub](https://github.com/PowerShell/PowerShell)
 - [Microsoft Terminal](https://aka.ms/terminal),
-  [Github](https://github.com/microsoft/terminal)
+  view source on [Github](https://github.com/microsoft/terminal)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [GitHub Desktop](https://desktop.github.com/)
 - GitHub cloning path: <br />
   `\\wsl$\Ubuntu\home\milan\GitHub` or <br />
   `\\wsl$\<distro_name>\home\<user_name>\GitHub`
 
-## 2. Install WSL
+### 2. Install WSL
 
-Follow official updated steps to install WSL in Windows 10
+Follow official updated steps to install WSL for Windows 10
 [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
-## 3. Prepare OS
+### 3. Prepare OS
 
 Update OS packages
 
 ```bash
-sudo apt update -y && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 ```
 
-## 4. Setup Ruby and gems
+### 4. Setup Ruby and gems
 
 - [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/#apt)
 with OS native apt
@@ -103,7 +97,7 @@ source ~/.bashrc
 sudo apt install -y zlib1g zlib1g-dev
 ```
 
-### Install essential gems for our project
+#### Install essential gems for our project
 
 - Install [Bundler](https://bundler.io/) gem:
 
@@ -117,7 +111,7 @@ gem install bundler
 bundle install
 ```
 
-## 5. Setup Node.js
+### 5. Setup Node.js
 
 Install [nodejs](https://github.com/nodesource/distributions/blob/master/README.md#deb)
 with OS native apt
@@ -135,7 +129,7 @@ Node.js version manager
 - [Install Node.js and npm from NodeSource](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
 - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### Setup [package.json](https://docs.npmjs.com/files/package.json) file
+#### Setup [package.json](https://docs.npmjs.com/files/package.json) file
 
 - Go to project file, and [create a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
 - Setup required [dependencies](https://docs.npmjs.com/files/package.json#dependencies)
@@ -187,26 +181,6 @@ To run package on project installed folder `npx webpack`
 - node.js
   + npm
 ```
-
-<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
-
----
-
-## Coding guide
-
-camelCase for JavaScript/jQuery, underscores for PHP/Liguid tag, and hyphens for CSS. Boom!
-
-- [Code Guide by Mark Otto](https://codeguide.co/)
-- [Google Style Guides](https://google.github.io/styleguide/)
-- [HTML Style Guide and Coding Conventions](https://www.w3schools.com/html/html5_syntax.asp), W3 Schools
-- [GitHub Guides](https://guides.github.com/)
-- [How to name css classes](http://bdavidxyz.com/blog/how-to-name-css-classes/)
-- [Ubuntu, ExternalGuides](https://help.ubuntu.com/community/ExternalGuides)
-- [About `rel=noopener`](https://mathiasbynens.github.io/rel-noopener/)
-- [Rouge code highlighter - List of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)
-- [jEmoji searcher by Muan](https://emoji.muan.co/)
-
-<br />
 
 <p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
