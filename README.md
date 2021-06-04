@@ -122,8 +122,7 @@ bundle install
 
 ### 5. Setup Node.js
 
-Install [nodejs](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
-with OS native APT
+Install Node.js with OS native APT
 
 ```bash
 sudo apt update -y
@@ -135,7 +134,8 @@ npm --version
 ```
 
 Node.js version manager
-- [Install Node.js and npm from NodeSource](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+- [Install Node.js and npm from NodeSource](hhttps://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+- [nodenv](https://github.com/nodenv/nodenv)
 - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 #### Setup [package.json](https://docs.npmjs.com/files/package.json) file
