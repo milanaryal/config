@@ -7,9 +7,8 @@
 # | this will override the default configuration                       |
 # ----------------------------------------------------------------------
 
-#
 # $ _ Custom bash prompt
-#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Print Linux distro without version, just only dist:
 linux_distro() {
@@ -35,6 +34,8 @@ function __ps1_newline_login {
 
 PROMPT_COMMAND='__ps1_newline_login'
 export PS1
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Atom alias (https://github.com/atom/atom/issues/18126#issuecomment-463226481)
 atom() {

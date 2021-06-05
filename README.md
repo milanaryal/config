@@ -28,7 +28,7 @@
 This repository includes a shell script for executing the bulk of the configuration process. First, install and agree to terms for WSL, then download and run Windows Terminal. Then, enter the following in Terminal:
 
 ```bash
-cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAryal/config/master/config.sh > ~/Downloads/config.sh && bash ~/Downloads/config.sh
+cd $Home && mkdir -p downloads && curl https://raw.githubusercontent.com/MilanAryal/config/master/config.sh > ~/dl/config.sh && bash ~/downloads/config.sh
 ```
 
 ## Table of contents
