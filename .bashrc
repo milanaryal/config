@@ -2,7 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-
 # ----------------------------------------------------------------------
 # | Add the following line at the bottom of ~/.bashrc file             |
 # | this will override the default configuration                       |

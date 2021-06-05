@@ -36,7 +36,7 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 
 1. [Required](#1-required)
 2. [Setup WSL](#2-setup-wsl)
-3. [Prepare WSL](#3-prepare-WSL)
+3. [Prep WSL](#3-prep-WSL)
 4. [Setup Ruby](#4-setup-ruby)
 5. [Setup Node.js](#5-setup-nodejs)
 
@@ -46,28 +46,30 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 
 - [WSL2](https://aka.ms/wsl2),
   view [issues](https://github.com/microsoft/WSL/issues)
+
 - Try the new cross-platform [PowerShell](https://aka.ms/pscore6),
   view source on [GitHub](https://github.com/PowerShell/PowerShell)
+
 - [Microsoft Terminal](https://aka.ms/terminal),
   view source on [Github](https://github.com/microsoft/terminal)
+
 - [Visual Studio Code](https://code.visualstudio.com/),
   view source on [Github](https://github.com/Microsoft/vscode).
   Essential extension for VS Code: [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+
 - [GitHub Desktop](https://desktop.github.com/),
   view source on [Github](https://github.com/desktop/desktop)
-- [Homebrew](https://brew.sh/),
-  view source on [Github](https://github.com/Homebrew/brew)
 
 - Setup GitHub Desktop cloning path:`\\wsl$\Ubuntu\home\milan\github`
-(i.e `\\wsl$\<distro_name>\home\<user_name>\github`)
+(i.e. `\\wsl$\<distro_name>\home\<user_name>\github`)
 
 ### 2. Setup WSL
 
-- Follow official updated steps to install WSL for Windows 10. See [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+- Follow official updated steps to install WSL for Windows 10. See <https://docs.microsoft.com/en-us/windows/wsl/install-win10>.
 
-_Forgot WSL password? See [https://aka.ms/wslusers#reset-your-linux-password](https://aka.ms/wslusers)._
+_Forgot WSL password? See [https://aka.ms/wslusers](https://aka.ms/wslusers#reset-your-linux-password)._
 
-### 3. Prepare WSL
+### 3. Prep WSL
 
 - Update and upgrade packages:
 
@@ -81,23 +83,71 @@ sudo apt update && sudo apt upgrade -y
 sudo apt-get install -y build-essential procps curl file git zlib1g-dev
 ```
 
+- Install [Homebrew](https://brew.sh/),
+  view source on [Github](https://github.com/Homebrew/brew).
+  See <https://docs.brew.sh/Homebrew-on-Linux>.
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+- Setup `/home/linuxbrew/.linuxbrew/bin` in your PATH:
+
+```bash
+# See https://docs.brew.sh/linux for more information
+
+# Add Homebrew to your PATH in /home/milan/.profile:
+$ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/milan/.profile
+
+$ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Install the Homebrew dependencies if you have sudo access:
+$ sudo apt-get install build-essential
+
+# We recommend that you install GCC:
+$ brew install gcc
+
+# Run `brew help` to get started
+# Further documentation: https://docs.brew.sh
+```
+
+- Log out then log back in to confirm the install.
+
+_Caution: Never attempt to edit Linux system files like .bashrc or .profile with a Windows text editor. Windows file metadata differs from Linux file metadata. You could corrupt or damage your Linux environment. Use Bash commands as above, or use a Linux text editor such as [nano or vi](https://www.pluralsight.com/blog/it-ops/linux-text-editors-vi-nano). You can also use a specialized Windows editor like [Notepad++](https://notepad-plus-plus.org/) that can save text as Unix script files._
+
 ### 4. Setup Ruby
 
 - Install [rbenv](https://github.com/rbenv/rbenv) via Homebrew:
 
 ```bash
-$ brew install rbenv
-$ rbenv init
-$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+brew install rbenv
 ```
 
-- Verify that rbenv is properly set up using this rbenv-doctor script:
+- Add rbenv to your system's $PATH variable:
+
+```bash
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+```
+
+- `rbenv init`
+
+```bash
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+```
+
+- Verify rbenv is configured properly:
+
+```bash
+type rbenv
+```
+
+- Verify that rbenv is properly set up using _rbenv-doctor_ script:
 
 ```bash
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 ```
 
-- Download a version of Ruby via rbenv: See [https://gorails.com/setup/ubuntu/20.04](https://gorails.com/setup/ubuntu/20.04).
+- Download a version of Ruby via rbenv: See <https://gorails.com/setup/ubuntu/20.04>.
 
 ```bash
 # Download a version of Ruby via rbenv:
@@ -110,28 +160,43 @@ $ rbenv global 2.7.3
 $ gem install bundler
 ```
 
-_Installing and managing Ruby with rbenv allows us to specify versions of Ruby on a per-project basis. It also means we can avoid running sudo commands for installing gems and more as it's not affecting OS's system Ruby._
-
-_Having trouble with nokogiri? See [https://stackoverflow.com/a/41491487](https://stackoverflow.com/a/41491487)._
-
-
 - Ruby [dependencies](https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies):
 
 ```bash
-$ sudo apt-get install -y build-essential zlib1g-dev
+sudo apt-get install -y build-essential zlib1g-dev
 ```
+
+_Installing and managing Ruby with rbenv allows us to specify versions of Ruby on a per-project basis. It also means we can avoid running sudo commands for installing gems and more as it's not affecting OS's system Ruby._
+
+_Having trouble with nokogiri? See <https://stackoverflow.com/a/41491487>._
 
 ### 5. Setup Node.js
 
 - Install [nodenv](https://github.com/nodenv/nodenv) via Homebrew:
 
 ```bash
-$ brew install nodenv
-$ nodenv init
-$ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc
+brew install nodenv
 ```
 
-- Verify that nodenv is properly set up using this nodenv-doctor script:
+- Add nodenv to your system's $PATH variable:
+
+```bash
+echo 'eval "$(nodenv init -)"' >> ~/.bashrc
+```
+
+- `nodenv init`
+
+```bash
+echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc
+```
+
+- Verify nodenv is configured properly:
+
+```bash
+type nodenv
+```
+
+- Verify that nodenv is properly set up using _nodenv-doctor_ script:
 
 ```bash
 curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash
@@ -147,12 +212,12 @@ $ nodenv install 14.17.0
 $ nodenv global 14.17.0
 ```
 
-_Installing and managing Node.js with nodenv allows us to specify versions of Node on a per-project basis. It also means we can avoid running sudo commands for installing global packages and more as it's not affecting OS's system Node.js._
-
 - Node.js [dependencies](https://github.com/nodesource/distributions/blob/master/README.md#debinstall):
 
 ```bash
 sudo apt-get install -y build-essential
 ```
+
+_Installing and managing Node.js with nodenv allows us to specify versions of Node on a per-project basis. It also means we can avoid running sudo commands for installing global packages and more as it's not affecting OS's system Node.js._
 
 <p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
