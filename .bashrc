@@ -42,3 +42,9 @@ atom() {
   target_path=$(wslpath -a -w $(readlink -f $1)) # resolve the path
   (/mnt/c/Windows/System32/cmd.exe /C "atom.cmd $target_path" &> /dev/null) # open the path
 }
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"

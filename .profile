@@ -8,6 +8,8 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+# Adding environment variables in ~/.profile, will be effective
+# the next time you log in or restart Terminal app.
 # https://askubuntu.com/questions/121073/why-bash-profile-is-not-getting-sourced-when-opening-a-terminal#121075
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -16,8 +18,12 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # rbenv
 eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Add ~/.rbenv/bin to your $PATH for access to the rbenv command-line utility.
+# $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 
 # nodenv
 eval "$(nodenv init -)"
-export PATH="$HOME/.nodenv/bin:$PATH"
+
+# Add ~/.nodenv/bin to your $PATH for access to the nodenv command-line utility.
+# $ echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc

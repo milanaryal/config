@@ -13,7 +13,7 @@
 
 </div><br />
 
-**Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, GitHub, Jekyll, and more so I can more quickly get back to coding.
+**Config** is a basic checklist I follow to set up a new Ubuntu's development environment. It gets me up to speed with Git, Ruby, Node.js, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
 ## Dotfiles
 
@@ -122,16 +122,16 @@ _**Caution**: Never attempt to edit Linux system files like .bashrc or .profile 
 brew install rbenv
 ```
 
-- Add rbenv to your system's $PATH variable:
+- Set up rbenv in your shell. Run `rbenv init`:
+
+```bash
+echo 'eval "$(rbenv init -)"' >> ~/.profile
+```
+
+- Add `~/.rbenv/bin` to your `$PATH` for access to the `rbenv` command-line utility:
 
 ```bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-```
-
-- `rbenv init`:
-
-```bash
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
 
 - Verify rbenv is configured properly:
@@ -177,13 +177,13 @@ _Having trouble with nokogiri? See <https://stackoverflow.com/a/41491487>._
 brew install nodenv
 ```
 
-- Add nodenv to your system's $PATH variable:
+- Set up nodenv in your shell. Run  `nodenv init`:
 
 ```bash
-echo 'eval "$(nodenv init -)"' >> ~/.bashrc
+echo 'eval "$(nodenv init -)"' >> ~/.profile
 ```
 
-- `nodenv init`:
+- Add `~/.nodenv/bin` to your `$PATH` for access to the `nodenv` command-line utility:
 
 ```bash
 echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc
@@ -209,6 +209,9 @@ $ nodenv install 14.17.0
 
 # Make it the global version of Node.js: 
 $ nodenv global 14.17.0
+
+# https://www.npmjs.com/package/npm-check-updates
+$ npm install -g npm-check-updates
 ```
 
 - Node.js [dependencies](https://github.com/nodesource/distributions/blob/master/README.md#debinstall):
