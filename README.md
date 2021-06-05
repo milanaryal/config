@@ -20,7 +20,6 @@
 | File | Description |
 | --- | --- |
 | `.bashrc` | Customizes the Terminal prompt and echoes the currently checked out Git branch. |
-| `.gitconfig` | Global Git configuration to specify my name and email, shortcuts, colors, and more. |
 | `.gitignore` | The Git ignore file that I use everywhere. |
 | `.gitattributes` | The Git attributes file that I use everywhere. |
 
@@ -113,7 +112,7 @@ $ brew install gcc
 
 - Log out then log back in to confirm the install.
 
-_Caution: Never attempt to edit Linux system files like .bashrc or .profile with a Windows text editor. Windows file metadata differs from Linux file metadata. You could corrupt or damage your Linux environment. Use Bash commands as above, or use a Linux text editor such as [nano or vi](https://www.pluralsight.com/blog/it-ops/linux-text-editors-vi-nano). You can also use a specialized Windows editor like [Notepad++](https://notepad-plus-plus.org/) that can save text as Unix script files._
+_**Caution**: Never attempt to edit Linux system files like .bashrc or .profile with a Windows text editor. Windows file metadata differs from Linux file metadata. You could corrupt or damage your Linux environment. Use Bash commands as above, or use a Linux text editor such as [nano or vi](https://www.pluralsight.com/blog/it-ops/linux-text-editors-vi-nano). You can also use a specialized Windows editor like [Notepad++](https://notepad-plus-plus.org/) that can save text as Unix script files._
 
 ### 4. Setup Ruby
 
@@ -129,7 +128,7 @@ brew install rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 ```
 
-- `rbenv init`
+- `rbenv init`:
 
 ```bash
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
@@ -184,7 +183,7 @@ brew install nodenv
 echo 'eval "$(nodenv init -)"' >> ~/.bashrc
 ```
 
-- `nodenv init`
+- `nodenv init`:
 
 ```bash
 echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bashrc

@@ -9,9 +9,7 @@
 #umask 022
 
 # https://askubuntu.com/questions/121073/why-bash-profile-is-not-getting-sourced-when-opening-a-terminal#121075
-# ----------------------------------------------------------------------
-
-# ----------------------------------------------------------------------
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
