@@ -34,7 +34,7 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 
 ## Table of contents
 
-1. [Install required apps for our projects](#1-install-required-apps-for-our-projects)
+1. [Required apps for our projects](#1-required-apps-for-our-projects)
 2. [Install WSL](#2-install-wsl)
 3. [Prepare OS](#3-prepare-os)
 4. [Setup Ruby and gems](#4-setup-ruby-and-gems)
@@ -45,7 +45,8 @@ cd $Home && mkdir -p Downloads && curl https://raw.githubusercontent.com/MilanAr
 ### 1. Required apps for our projects
 
 - [WSL2](https://aka.ms/wsl2),
-  view [issues](https://github.com/microsoft/WSL/issues)
+  view [issues](https://github.com/microsoft/WSL/issues),
+  [https://aka.ms/wslusers](https://aka.ms/wslusers)
 - Try the new cross-platform [PowerShell](https://aka.ms/pscore6),
   view source on [GitHub](https://github.com/PowerShell/PowerShell)
 - [Microsoft Terminal](https://aka.ms/terminal),
@@ -131,6 +132,14 @@ sudo apt install -y nodejs npm build-essential
 
 nodejs --version
 npm --version
+```
+
+Avoid installing npm global packages as the root user
+
+```bash
+echo '# Install npm global packages to ~/npm' >> ~/.bashrc
+echo 'export PATH="$HOME/npm/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 Node.js version manager
