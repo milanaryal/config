@@ -53,7 +53,7 @@ cd $Home && mkdir -p downloads && curl https://raw.githubusercontent.com/MilanAr
   view source on [Github](https://github.com/microsoft/terminal)
 
 - [Visual Studio Code](https://code.visualstudio.com/),
-  view source on [Github](https://github.com/Microsoft/vscode).
+  view source on [Github](https://github.com/Microsoft/vscode).<br />
   Essential extension for VS Code: [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 - [GitHub Desktop](https://desktop.github.com/),
@@ -79,7 +79,7 @@ sudo apt update && sudo apt upgrade -y
 - Install required dependencies:
 
 ```bash
-sudo apt-get install -y build-essential procps curl file git zlib1g-dev
+sudo apt install -y build-essential procps curl file git zlib1g-dev
 ```
 
 - Install [Homebrew](https://brew.sh/),
@@ -101,7 +101,7 @@ $ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/milan/.
 $ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install the Homebrew dependencies if you have sudo access:
-$ sudo apt-get install build-essential
+$ sudo apt install -y build-essential
 
 # We recommend that you install GCC:
 $ brew install gcc
@@ -162,7 +162,7 @@ $ gem install bundler
 - Ruby [dependencies](https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies):
 
 ```bash
-sudo apt-get install -y build-essential zlib1g-dev
+sudo apt install -y build-essential zlib1g-dev
 ```
 
 _Installing and managing Ruby with rbenv allows us to specify versions of Ruby on a per-project basis. It also means we can avoid running sudo commands for installing gems and more as it's not affecting OS's system Ruby._
@@ -217,7 +217,7 @@ $ npm install -g npm-check-updates
 - Node.js [dependencies](https://github.com/nodesource/distributions/blob/master/README.md#debinstall):
 
 ```bash
-sudo apt-get install -y build-essential
+sudo apt install -y build-essential
 ```
 
 _Installing and managing Node.js with nodenv allows us to specify versions of Node on a per-project basis. It also means we can avoid running sudo commands for installing global packages and more as it's not affecting OS's system Node.js._
