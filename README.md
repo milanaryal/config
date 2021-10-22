@@ -59,8 +59,12 @@ cd $Home && mkdir -p downloads && curl https://raw.githubusercontent.com/MilanAr
 - [GitHub Desktop](https://desktop.github.com/),
   view source on [Github](https://github.com/desktop/desktop)
 
-- Setup GitHub Desktop cloning path:`\\wsl$\Ubuntu\home\milan\github`
-(i.e. `\\wsl$\<distro_name>\home\<user_name>\github`)
+- Setup GitHub Desktop cloning path: `\\wsl.localhost\Ubuntu\home\milan\github`
+  (i.e. `\\wsl.localhost\<distro_name>\home\<user_name>\github`) <br />
+  `\\wsl$\Ubuntu\home\milan\github`
+  (i.e. `\\wsl$\<distro_name>\home\<user_name>\github`)
+
+_Ubuntu, PowerShell, Microsoft Terminal, Visual Studio Code,.. are on Microsoft Store._
 
 ### 2. Setup WSL
 
@@ -150,10 +154,10 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | 
 
 ```bash
 # Download a version of Ruby via rbenv:
-$ rbenv install 2.7.3
+$ rbenv install 2.7.4
 
 # Make it the global version of Ruby: 
-$ rbenv global 2.7.3
+$ rbenv global 2.7.4
 
 # Additional dependencies:
 $ gem install bundler
@@ -205,10 +209,10 @@ curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doct
 
 ```bash
 # Download a version of Node.js via nodenv:
-$ nodenv install 14.17.0
+$ nodenv install 14.18.1
 
 # Make it the global version of Node.js: 
-$ nodenv global 14.17.0
+$ nodenv global 14.18.1
 
 # https://www.npmjs.com/package/npm-check-updates
 $ npm install -g npm-check-updates
