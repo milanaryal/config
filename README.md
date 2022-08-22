@@ -68,7 +68,11 @@ _Ubuntu, PowerShell, Microsoft Terminal, Visual Studio Code,.. are on Microsoft 
 
 ### 2. Setup WSL
 
-- Follow official updated steps to install WSL for Windows 10/11. See <https://docs.microsoft.com/en-us/windows/wsl/install-win10> or <https://ubuntu.com/wsl>.
+- Follow official updated steps to install WSL for Windows 10/11. See <https://aka.ms/wslinstall> or <https://ubuntu.com/wsl>.
+
+```
+wsl --install
+```
 
 _Forgot WSL password? See [https://aka.ms/wslusers](https://aka.ms/wslusers#reset-your-linux-password)._
 
