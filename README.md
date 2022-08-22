@@ -38,7 +38,8 @@ cd $Home && mkdir -p downloads && curl https://raw.githubusercontent.com/MilanAr
 3. [Prep WSL](#3-prep-WSL)
 4. [Setup Ruby](#4-setup-ruby)
 5. [Setup Node.js](#5-setup-nodejs)
-6. [Setup GitHub CLI](#6-setup-github-cli)
+6. [Setup Git](#6-setup-git)
+7. [Setup GitHub CLI](#7-setup-github-cli)
 
 ## Checklist
 
@@ -266,7 +267,22 @@ _Installing and managing Node.js with nodenv allows us to specify versions of No
 
 <p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
 
-### 6. Setup GitHub CLI
+### 6. Setup Git
+
+> Please tell me who you are.
+
+- Run to set your account's default identity:
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+_Omit `--global` to set the identity only in this repository._
+
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
+
+### 7. Setup GitHub CLI
 
 - [Installation](https://github.com/cli/cli#installation)
 
