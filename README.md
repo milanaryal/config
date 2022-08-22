@@ -70,17 +70,30 @@ _Ubuntu, PowerShell, Microsoft Terminal, Visual Studio Code,.. are on Microsoft 
 
 - Follow official updated steps to install WSL for Windows 10/11. See <https://aka.ms/wslinstall> or <https://ubuntu.com/wsl>.
 
-```
+_Forgot WSL password? See [https://aka.ms/wslusers](https://aka.ms/wslusers#reset-your-linux-password)._
+
+- Install WSL
+
+```bash
 wsl --install
 ```
 
-_Forgot WSL password? See [https://aka.ms/wslusers](https://aka.ms/wslusers#reset-your-linux-password)._
+_For first time `wsl --install` will auto download Ubuntu LTS._
 
-When new LTS versions are released, Ubuntu can be upgraded once the first point release is available. This can be done from the command line by using:
+- Download Ubuntu
 
 ```bash
-sudo do-release-upgrade
+wsl --install -d ubuntu
 ```
+
+_This will install both WSL and Ubuntu! Don't forget to restart your machine before continuing._
+
+- Update WSL
+
+```bash
+wsl --update
+```
+_The WSL 2 kernel will be updated to the latest version. To force a restart, please run `wsl --shutdown` or `wsl --help` to display usage information._
 
 Installation tips:
 
@@ -88,6 +101,12 @@ Installation tips:
 - To launch, use "ubuntu" on the command-line prompt or Windows Terminal, or click on the Ubuntu tile in the Start Menu
 
 ### 3. Prep WSL
+
+- When new LTS versions are released, Ubuntu can be upgraded once the first point release is available. This can be done from the command line by using:
+
+```bash
+sudo do-release-upgrade -y
+```
 
 - Update and upgrade packages:
 
@@ -169,10 +188,10 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | 
 
 ```bash
 # Download a version of Ruby via rbenv:
-$ rbenv install 3.0.4
+$ rbenv install 3.1.2
 
 # Make it the global version of Ruby: 
-$ rbenv global 3.0.4
+$ rbenv global 3.1.2
 
 # Additional dependencies:
 $ gem install bundler
@@ -224,10 +243,10 @@ curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doct
 
 ```bash
 # Download a version of Node.js via nodenv:
-$ nodenv install 16.15.1
+$ nodenv install 16.17.0
 
 # Make it the global version of Node.js: 
-$ nodenv global 16.15.1
+$ nodenv global 16.17.0
 
 # https://www.npmjs.com/package/npm-check-updates
 $ npm install -g npm-check-updates
