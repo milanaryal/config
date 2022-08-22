@@ -272,6 +272,7 @@ _Installing and managing Node.js with nodenv allows us to specify versions of No
 
 ```bash
 brew install gh
+```
 
 - [gh auth](https://cli.github.com/manual/gh_auth)
 
