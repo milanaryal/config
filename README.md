@@ -68,9 +68,20 @@ _Ubuntu, PowerShell, Microsoft Terminal, Visual Studio Code,.. are on Microsoft 
 
 ### 2. Setup WSL
 
-- Follow official updated steps to install WSL for Windows 10. See <https://docs.microsoft.com/en-us/windows/wsl/install-win10>.
+- Follow official updated steps to install WSL for Windows 10/11. See <https://docs.microsoft.com/en-us/windows/wsl/install-win10> or <https://ubuntu.com/wsl>.
 
 _Forgot WSL password? See [https://aka.ms/wslusers](https://aka.ms/wslusers#reset-your-linux-password)._
+
+When new LTS versions are released, Ubuntu can be upgraded once the first point release is available. This can be done from the command line by using:
+
+```bash
+sudo do-release-upgrade
+```
+
+Installation tips:
+
+- Search for "Turn Windows features on or off" in the Windows search bar and ensure that "Windows Subsystem for Linux" is turned on before restarting your machine.
+- To launch, use "ubuntu" on the command-line prompt or Windows Terminal, or click on the Ubuntu tile in the Start Menu
 
 ### 3. Prep WSL
 
