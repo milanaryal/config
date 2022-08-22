@@ -38,6 +38,7 @@ cd $Home && mkdir -p downloads && curl https://raw.githubusercontent.com/MilanAr
 3. [Prep WSL](#3-prep-WSL)
 4. [Setup Ruby](#4-setup-ruby)
 5. [Setup Node.js](#5-setup-nodejs)
+6. [Setup GitHub CLI](#6-setup-github-cli)
 
 ## Checklist
 
@@ -54,10 +55,13 @@ cd $Home && mkdir -p downloads && curl https://raw.githubusercontent.com/MilanAr
 
 - [Visual Studio Code](https://code.visualstudio.com/),
   view source on [Github](https://github.com/Microsoft/vscode).<br />
-  Essential extension for VS Code: [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+  Essential extension for VS Code: [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)<br />
+  Essential extension for WSL VS Code: [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
 - [GitHub Desktop](https://desktop.github.com/),
-  view source on [Github](https://github.com/desktop/desktop)
+  view source on [Github](https://github.com/desktop/desktop#readme)<br />
+  Or, use [GitHub CLI](https://cli.github.com/manual/gh),
+  view source on [Github](https://github.com/cli/cli#readme)
 
 - Setup GitHub Desktop cloning path: `\\wsl.localhost\Ubuntu\home\milan\github`
   (i.e. `\\wsl.localhost\<distro_name>\home\<user_name>\github`) <br />
@@ -259,5 +263,53 @@ sudo apt install -y build-essential
 ```
 
 _Installing and managing Node.js with nodenv allows us to specify versions of Node on a per-project basis. It also means we can avoid running sudo commands for installing global packages and more as it's not affecting OS's system Node.js._
+
+<p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
+
+### 6. Setup GitHub CLI
+
+- [Installation](https://github.com/cli/cli#installation)
+
+```bash
+brew install gh
+
+- [gh auth](https://cli.github.com/manual/gh_auth)
+
+```bash
+gh auth login
+```
+
+- Follow output of [GitHub CLI](https://cli.github.com/)
+
+```bash
+milan@DESKTOP-BCIXXXX:~/github$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? SSH
+? Generate a new SSH key to add to your GitHub account? Yes
+? Enter a passphrase for your new SSH key (Optional) 
+? Title for your SSH key: GitHub CLI
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: XXXX-XXXX
+Press Enter to open github.com in your browser...        
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+✓ Uploaded the SSH key to your GitHub account: /home/milan/.ssh/id_ed2XXXX.pub
+✓ Logged in as MilanAryal
+```
+
+- [gh repo clone](https://cli.github.com/manual/gh_gist_clone)
+
+```bash
+gh repo clone MilanAryal/config
+```
+
+- [gh repo sync](https://cli.github.com/manual/gh_repo_sync)
+
+```bash
+cd MilanAryal/config
+gh repo sync
+```
 
 <p align="right"><a href="#table-of-contents"><b>↥ To the top</b></a></p>
