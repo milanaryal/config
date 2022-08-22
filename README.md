@@ -102,10 +102,10 @@ Installation tips:
 
 ### 3. Prep WSL
 
-- When new LTS versions are released, Ubuntu can be upgraded once the first point release is available. This can be done from the command line by using:
+- When new LTS versions are released, Ubuntu can be upgraded once the first point release is available. This can be done from the command line by using ([without prompts](https://askubuntu.com/questions/250733/can-i-do-a-silent-or-unattended-release-upgrade#answer-250882)):
 
 ```bash
-sudo do-release-upgrade -y
+sudo do-release-upgrade -f DistUpgradeViewNonInteractive
 ```
 
 - Update and upgrade packages:
