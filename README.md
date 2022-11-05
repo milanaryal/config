@@ -1,9 +1,9 @@
-# Config
-
 <p align="center">
   <img width="768" alt="Mac Dev Env Screenshot 2022-11-05 at 06 42 50" src="https://user-images.githubusercontent.com/9361180/200095520-f9bf4b45-1b64-4c3e-898c-8e56a0f5eedf.png" />  
 </p>
 <br />
+
+# Config
 
 Config is a basic checklist I follow to set up a new Mac's development environment. It gets me up to speed with Git, Ruby, Node.js, GitHub, Jekyll, and more so I can more quickly get back to coding.
 
@@ -24,6 +24,8 @@ Config is a basic checklist I follow to set up a new Mac's development environme
 
 - Setup GitHub Desktop/CLI cloning path: `\home\milan\GitHub` <br />
   (i.e. `\home\<user_name>\GitHub`)
+
+<br />
 
 ## Setup Homebrew
 
@@ -98,7 +100,7 @@ _Having trouble with nokogiri? See <https://stackoverflow.com/a/41491487>._
 
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
 
-## Setup NodeSetup Node.js
+## Setup Node.js
 
 - Install [nodenv](https://github.com/nodenv/nodenv) via Homebrew:
 
