@@ -27,18 +27,17 @@ Config is a basic checklist I follow to set up a new Mac's development environme
 
 <br />
 
-
 ## Setup VS Code
 
 - Follow the installation process from [official docs](https://code.visualstudio.com/docs/setup/mac#_installation).
 
 - [Launching from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) — you can also run VS Code from the terminal by typing 'code' after adding it to the path:
 
-![shell-command](https://user-images.githubusercontent.com/9361180/200259875-962b4c55-4329-4104-82e4-8965072be017.png)
-
 i. Launch VS Code. 
 
 ii. Open the Command Palette `Cmd+Shift+P` and type `shell command` to find the "Shell Command: Install 'code' command in PATH command".
+
+![shell-command](https://user-images.githubusercontent.com/9361180/200259875-962b4c55-4329-4104-82e4-8965072be017.png)
 
 iii. Restart the terminal for the new `$PATH` value to take effect. You'll be able to type `code .` in any folder to start editing files in that folder.
 
@@ -107,7 +106,7 @@ $ rbenv global 3.1.2
 $ gem install bundler
 ```
 
-- Ruby setup guide [by Jekyll](https://jekyllrb.com/docs/installation/macos/)
+- Ruby setup guide [by Jekyll](https://jekyllrb.com/docs/installation/macos/).
 
 _Installing and managing Ruby with rbenv allows us to specify versions of Ruby on a per-project basis. It also means we can avoid running sudo commands for installing gems and more as it's not affecting OS's system Ruby._
 
