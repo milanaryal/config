@@ -205,3 +205,10 @@ gh repo sync
 ```
 
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
+
+### Invitation
+
+Sign-up with the following invitation link to get extra 500 MB bonus cloud space:
+
+- [Dropbox](https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9)
+- [OneDrive](https://onedrive.live.com?invref=8276ca569c4bc513&invscr=90)
