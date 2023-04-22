@@ -206,6 +206,14 @@ gh repo sync
 
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
 
+### Firefox Setup
+
+- [Best Privacy Web Browser to Stay Private in 2023](https://www.privacytools.io/private-browser)
+- [Firefox Hardening Resources](https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/)
+- (The Ultimate Guide to Firefox Hardening!)[https://www.youtube.com/watch?v=F7-bW2y6lcI]
+- `about:config` -- `fission.autostart` -- `true`
+- `about:config` -- `extensions.pocket.enabled` - `false`
+
 ### Invitation
 
 Sign-up with the following invitation link to get extra 500 MB bonus cloud space:
