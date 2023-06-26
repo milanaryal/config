@@ -210,7 +210,7 @@ gh repo sync
 
 - [Best Privacy Web Browser to Stay Private in 2023](https://www.privacytools.io/private-browser)
 - [Firefox Hardening Resources](https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/)
-- (The Ultimate Guide to Firefox Hardening!)[https://www.youtube.com/watch?v=F7-bW2y6lcI]
+- [The Ultimate Guide to Firefox Hardening!](https://www.youtube.com/watch?v=F7-bW2y6lcI)
 - `about:config` -- `fission.autostart` -- `true`
 - `about:config` -- `extensions.pocket.enabled` - `false`
 
@@ -219,5 +219,7 @@ gh repo sync
 Sign-up with the following invitation link to get extra 500 MB bonus cloud space:
 
 - [Dropbox](https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9)
-- [OneDrive](https://onedrive.live.com?invref=8276ca569c4bc513&invscr=90)
-- [OneDrive](https://onedrive.live.com/?invref=f7e00c70d669a457&invscr=90) - Bhai
+- <del>[OneDrive](https://onedrive.live.com?invref=8276ca569c4bc513&invscr=90)</del>
+
+**Brother's (@KshitizAryal):**
+- [OneDrive](https://onedrive.live.com/?invref=f7e00c70d669a457&invscr=90)
