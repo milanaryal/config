@@ -213,7 +213,7 @@ gh repo sync
 
 ### Firefox Configuration Setup
 
-- [Best Privacy Web Browser to Stay Private in 2023](https://www.privacytools.io/private-browser)
+- [Best Privacy Web Browser to Stay Private](https://www.privacytools.io/private-browser) by Privacy Tools
 - [Firefox Recommended Configuration](https://www.privacyguides.org/en/desktop-browsers/#firefox) by Privacy Guides
 - [Firefox Hardening Resources](https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/)
 - [The Ultimate Guide to Firefox Hardening!](https://www.youtube.com/watch?v=F7-bW2y6lcI)
