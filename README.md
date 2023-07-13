@@ -52,10 +52,10 @@ iii. Restart the terminal for the new `$PATH` value to take effect. You'll be ab
 - Run these three commands in your terminal to add Homebrew to your PATH:
 
 ```zsh
-# ~/.zprofile <-> /Users/milan/.zprofile
+# ~/.zprofile <-> /users/milan/.zprofile
 
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/milan/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/milan/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /users/milan/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /users/milan/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
@@ -227,5 +227,5 @@ Sign-up with the following invitation link to get extra 500 MB bonus cloud space
 - [Dropbox](https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9)
 - <del>[OneDrive](https://onedrive.live.com?invref=8276ca569c4bc513&invscr=90)</del>
 
-**Brother's ([@KshitizAryal](https://github.com/KshitizAryal)):**
+**Brother's ([@kshitizaryal](https://github.com/kshitizaryal)):**
 - [OneDrive](https://onedrive.live.com/?invref=f7e00c70d669a457&invscr=90)
