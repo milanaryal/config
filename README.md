@@ -5,7 +5,7 @@
 
 # Config
 
-Config is a basic checklist I follow to set up a new Mac's development environment. It gets me up to speed with Git, Ruby, Node.js, GitHub, Jekyll, and more so I can more quickly get back to coding.
+Config is a basic checklist I follow to set up a new Mac's development environment. It gets me up to speed with Git, Ruby, Node.js, GitHub, Jekyll, Hugo, and more so I can more quickly get back to coding.
 
 ## Checkout
 
@@ -174,7 +174,7 @@ git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
-_Omit `--global` to set the identity only in this repository. For privacy purpose use GitHub private email address `ID+USERNAME@users.noreply.github.com` for git config._
+_Omit `--global` to set the identity only in this repository. For privacy purpose use GitHub private email address `id+username@users.noreply.github.com` for git config._
 
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
 
