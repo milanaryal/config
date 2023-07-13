@@ -217,8 +217,8 @@ gh repo sync
 - [Firefox Recommended Configuration](https://www.privacyguides.org/en/desktop-browsers/#firefox) by Privacy Guides
 - [Firefox Hardening Resources](https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/)
 - [The Ultimate Guide to Firefox Hardening!](https://www.youtube.com/watch?v=F7-bW2y6lcI)
-- `about:config` -- `fission.autostart` -- `true`
-- `about:config` -- `extensions.pocket.enabled` - `false`
+- `about:config` -> `fission.autostart` = `true`
+- `about:config` -> `extensions.pocket.enabled` = `false`
 
 ### Invitation
 
