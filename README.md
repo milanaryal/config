@@ -22,8 +22,8 @@ Config is a basic checklist I follow to set up a new Mac's development environme
   Or, use [GitHub CLI](https://cli.github.com/manual/gh),
   view source on [Github](https://github.com/cli/cli#readme)
 
-- Setup GitHub Desktop/CLI cloning path: `\home\milan\GitHub` <br />
-  (i.e. `\home\<user_name>\GitHub`)
+- Setup GitHub Desktop/CLI cloning path: `\home\milan\github` <br />
+  (i.e. `\home\<user_name>\github`)
 
 <br />
 
@@ -154,6 +154,10 @@ $ nodenv global 18.12.0
 $ npm install -g npm-check-updates
 ```
 
+- [uninstalling-node-versions](https://github.com/nodenv/nodenv#uninstalling-node-versions)
+- [uninstalling-nodenv](https://github.com/nodenv/nodenv#uninstalling-nodenv)
+- bin/{[node-build](https://github.com/nodenv/node-build/blob/master/bin/node-build),[nodenv-install](https://github.com/nodenv/node-build/blob/master/bin/nodenv-install),[nodenv-uninstall](https://github.com/nodenv/node-build/blob/master/bin/nodenv-uninstall)}
+
 _Installing and managing Node.js with nodenv allows us to specify versions of Node on a per-project basis. It also means we can avoid running sudo commands for installing global packages and more as it's not affecting OS's system Node.js._
 
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
@@ -194,13 +198,13 @@ _[See output](gh-auth.md)._
 - [gh repo clone](https://cli.github.com/manual/gh_gist_clone)
 
 ```zsh
-gh repo clone MilanAryal/config
+gh repo clone milanaryal/config
 ```
 
 - [gh repo sync](https://cli.github.com/manual/gh_repo_sync)
 
 ```zsh
-cd MilanAryal/config
+cd milanaryal/config
 gh repo sync
 ```
 
