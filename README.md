@@ -145,15 +145,16 @@ curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doct
 
 ```zsh
 # Download a version of Node.js via nodenv:
-$ nodenv install 18.12.0
+$ nodenv install 18.16.1
 
 # Make it the global version of Node.js: 
-$ nodenv global 18.12.0
+$ nodenv global 18.16.1
 
 # https://www.npmjs.com/package/npm-check-updates
 $ npm install -g npm-check-updates
 ```
 
+- [installing-node-versions](https://github.com/nodenv/nodenv#installing-node-versions)
 - [uninstalling-node-versions](https://github.com/nodenv/nodenv#uninstalling-node-versions)
 - [uninstalling-nodenv](https://github.com/nodenv/nodenv#uninstalling-nodenv)
 - bin/{[node-build](https://github.com/nodenv/node-build/blob/master/bin/node-build),[nodenv-install](https://github.com/nodenv/node-build/blob/master/bin/nodenv-install),[nodenv-uninstall](https://github.com/nodenv/node-build/blob/master/bin/nodenv-uninstall)}
@@ -210,9 +211,10 @@ gh repo sync
 
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
 
-### Firefox Setup
+### Firefox Configuration Setup
 
 - [Best Privacy Web Browser to Stay Private in 2023](https://www.privacytools.io/private-browser)
+- [Firefox Recommended Configuration](https://www.privacyguides.org/en/desktop-browsers/#firefox) by Privacy Guides
 - [Firefox Hardening Resources](https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/)
 - [The Ultimate Guide to Firefox Hardening!](https://www.youtube.com/watch?v=F7-bW2y6lcI)
 - `about:config` -- `fission.autostart` -- `true`
