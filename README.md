@@ -23,7 +23,7 @@ Config is a basic checklist I follow to set up a new Mac's development environme
   view source on [Github](https://github.com/cli/cli#readme)
 
 - Setup GitHub Desktop/CLI cloning path: `\home\milan\github` <br />
-  (i.e. `\home\<user_name>\github`)
+  (i.e. `\home\<username>\github`)
 
 <br />
 
