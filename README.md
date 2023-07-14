@@ -154,6 +154,8 @@ $ nodenv global 18.16.1
 $ npm install -g npm-check-updates
 ```
 
+Learn more:
+
 - [installing-node-versions](https://github.com/nodenv/nodenv#installing-node-versions)
 - [uninstalling-node-versions](https://github.com/nodenv/nodenv#uninstalling-node-versions)
 - [uninstalling-nodenv](https://github.com/nodenv/nodenv#uninstalling-nodenv)
