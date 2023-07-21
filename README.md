@@ -59,6 +59,12 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /users/milan/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
+Once Homebrew has installed, you may want to [opt out of the Homebrew analytics data sharing](https://docs.brew.sh/Analytics), which is enabled by default. To turn this off:
+
+```zsh
+brew analytics off
+```
+
 - Run `brew` help to get started
 - Further documentation: <https://docs.brew.sh>
 
