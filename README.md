@@ -76,6 +76,8 @@ brew analytics off
 
 _Homebrew auto install and setup xCode Command Line Tools. For manual installation open Terminal and trigger Xcode Command Line Tools installation: `xcode-select --install`._
 
+If to uninstall Homebrew, [read here](https://github.com/homebrew/install#uninstall-homebrew). - Homebrew [FAQ](https://docs.brew.sh/FAQ#how-do-i-uninstall-homebrew), [Superuser](https://superuser.com/questions/203707/how-to-uninstall-homebrew)
+
 <p align="right"><a href="#readme"><b>↥ To the top</b></a></p>
 
 ## Setup Ruby
