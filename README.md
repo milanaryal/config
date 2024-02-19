@@ -111,10 +111,10 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | 
 
 ```zsh
 # Download a version of Ruby via rbenv:
-$ rbenv install 3.1.2
+$ rbenv install 3.2.3
 
 # Make it the global version of Ruby: 
-$ rbenv global 3.1.2
+$ rbenv global 3.2.3
 
 # Additional dependencies:
 $ gem install bundler
@@ -159,10 +159,10 @@ curl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doct
 
 ```zsh
 # Download a version of Node.js via nodenv:
-$ nodenv install 18.16.1
+$ nodenv install 20.11.1
 
 # Make it the global version of Node.js: 
-$ nodenv global 18.16.1
+$ nodenv global 20.11.1
 
 # https://www.npmjs.com/package/npm-check-updates
 $ npm install -g npm-check-updates
