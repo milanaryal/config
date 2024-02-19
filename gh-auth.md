@@ -15,6 +15,8 @@ Press Enter to open github.com in your browser...
 ✓ Logged in as milanaryal
 ```
 
+> Recommended by GitHub: GitHub itself defaults to and recommends HTTPS for most users.
+
 ### Preferred protocol for Git operations: SSH
 
 ```zsh
