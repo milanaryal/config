@@ -12,7 +12,7 @@ Press Enter to open github.com in your browser...
 ✓ Authentication complete.
 - gh config set -h github.com git_protocol https
 ✓ Configured git protocol
-✓ Logged in as MilanAryal
+✓ Logged in as milanaryal
 ```
 
 ### Preferred protocol for Git operations: SSH
@@ -32,5 +32,5 @@ Press Enter to open github.com in your browser...
 - gh config set -h github.com git_protocol ssh
 ✓ Configured git protocol
 ✓ Uploaded the SSH key to your GitHub account: /home/milan/.ssh/id_ed2XXXX.pub
-✓ Logged in as MilanAryal
+✓ Logged in as milanaryal
 ```
