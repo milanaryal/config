@@ -15,7 +15,7 @@ Press Enter to open github.com in your browser...
 ✓ Logged in as MilanAryal
 ```
 
-### Preferred protocol for Git operations: HTTPS
+### Preferred protocol for Git operations: SSH
 
 ```zsh
 $ gh auth login
